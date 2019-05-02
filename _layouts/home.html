@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  Personal Blog
+  <center>
+  <a href="https://paulobmsousa.github.io/">
+  <img src="https://lh3.googleusercontent.com/g8hsW-pwFzlQt2CXmUbW4vaPETL9_eUKjCiW0EFwNY7EGxxN4KCS9kOSzutj9p6E3Uguyd6GdhYBraQOFO9Z80o5pTYxGtpLs_gNitOwcf9QreQSZPeemomUSvPPzTQ60iqOeDmo_xDwlofwWhdYNhXoAOX2Y9sKgXHJXaBZHNWuRrzJ0EvjJUsgjv1K6LeXn9oQ6wRvY44S9-VQMtiZ8Ny9vpgjqdpipzHE5Or-lp789nl-zUaVBJLNpwQ32tI9EBLLqW2zuC4Aww4FRJiHNOXgWhcBtyO-PXyUXmNB5G_QYhcbt4pVZBg4NayCTJv2eg6C1qcUjSx9B_MWy2xWC2pno1dndtpACkZChFYn_AKcfUJxdMmw32A4t4wbHHwXxWDJL_YqHnCMYBpMAAiMZcmkfdr6IkdLpEcrFtWx-h14N1udFlPTKLWY4WxO6qYDORKaqLsXQXtfdsR900kU8tOQYTcslzfLe12XmHzGlndZ0qFosg_DBcAU1_72lWDpMX05-A4iHF3ckYPzgVoYMht4QdBeut_tmSg0DDSc9JBVsm9Xk1qtpsAmfZtF6h5O_Oe4K7NZbHWiL2ZFw7pvO_wvn_SCNTPEExxVUfMmgcU_47DnsRRvLAalsxWDW4U4Udw1l08JpqcMSVXAbfdXQCJwgsRL4dk=w820-h296-no">
+  </a>
+  </center>
+  
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- else -%}
+    <h2>No posts found</h2>
+  {%- endif -%}
+
+</div>

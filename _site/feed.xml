@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/github-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-blog/" rel="alternate" type="text/html" /><updated>2019-05-02T13:19:35-04:00</updated><id>http://localhost:4000/github-blog/feed.xml</id><title type="html">PauloBMSousa Blog</title><subtitle>Personal Blog (incluing Family and Professional facts).</subtitle><entry><title type="html">Hello, Jekyll</title><link href="http://localhost:4000/github-blog/hello_jekyll/" rel="alternate" type="text/html" title="Hello, Jekyll" /><published>2019-04-30T09:38:58-04:00</published><updated>2019-04-30T09:38:58-04:00</updated><id>http://localhost:4000/github-blog/hello-jekyll</id><content type="html" xml:base="http://localhost:4000/github-blog/hello_jekyll/">&lt;h1 id=&quot;preview&quot;&gt;Preview&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jekyllrb.com/img/logo-2x.png&quot; alt=&quot;Jekyll Logo&quot; title=&quot;Jekyll Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this first post, I have noted that it could be a good idea to summarize how to create &lt;strong&gt;posts&lt;/strong&gt;, using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, that, in short, is one of the simplest and powerfull tool to create blogs.&lt;/p&gt;
+
+&lt;p&gt;Firstly, some reasons to chose Jekyll:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The simplicity (in general, static generators that allows to use HTML and CSS);&lt;/li&gt;
+  &lt;li&gt;No database needed (which implies that is simpler to deploy in a server - specially &lt;a href=&quot;https://about.gitlab.com/product/pages/&quot;&gt;GitLab pages&lt;/a&gt;);&lt;/li&gt;
+  &lt;li&gt;Markdown syntax (user-friendly).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now, let us start the procedure to the first blog…&lt;/p&gt;
+
+&lt;h1 id=&quot;basic-procedure&quot;&gt;Basic Procedure&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the Jekyll site &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll site&lt;/a&gt; follow the instructions.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Install a full Ruby development environment;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Install Jekyll and bundler gems;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the following command to create your own blog: &lt;code class=&quot;highlighter-rouge&quot;&gt;_jekyll new blog_name&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Inside the blog folder, you can start the server: &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;By default, the Jekyll server starts on socket &lt;strong&gt;4000&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;common-problems&quot;&gt;Common Problems&lt;/h1&gt;
+
+&lt;p&gt;Of course, sometimes following the above simple steps cannot work as expected.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyll demands Ruby and RubyGems and, of course, installation problems must be solved, before starting using Jekyll.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Under Windows environment, the process for installing Ruby is better conducted by using &lt;a href=&quot;https://rubyinstaller.org/&quot;&gt;Ruby Installer&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Aditionally, the Jekyll site has a step-by-step procedure to help Windows users: &lt;a href=&quot;https://jekyllrb.com/docs/installation/windows/&quot;&gt;Jekyll on Windows&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Note that, probably you are using the &lt;em&gt;minima&lt;/em&gt; theme bundle, that can be replaced whenever you want. But it is ideal for most cases.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;configuration-configyml&quot;&gt;Configuration: config.yml&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;config.yml&lt;/strong&gt; is the main configuration file and it is loaded once (not in run-time), what means that, differently from Posts, you need to rebuild (&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll build&lt;/code&gt;) and restart (&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;The main sections are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;title&lt;/li&gt;
+  &lt;li&gt;description&lt;/li&gt;
+  &lt;li&gt;baseurl&lt;/li&gt;
+  &lt;li&gt;url&lt;/li&gt;
+  &lt;li&gt;markdown&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some references that are useful can also be declared, such as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;email&lt;/li&gt;
+  &lt;li&gt;twitter_username&lt;/li&gt;
+  &lt;li&gt;github_username&lt;/li&gt;
+  &lt;li&gt;theme&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most are self intuitive, however, &lt;strong&gt;baseurl&lt;/strong&gt;, &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;markdown&lt;/strong&gt; are specially important. Let us describe:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;baseurl&lt;/strong&gt;: The relative path to the site. If it is left blanked, it will point to the root directory from the &lt;em&gt;url&lt;/em&gt;. It is suggested that you define a specific &lt;em&gt;baseurl&lt;/em&gt; to your blog;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;markdown&lt;/strong&gt;: The default markdown style. The option &lt;em&gt;“kramdown”&lt;/em&gt; is the default for Jekyll;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;theme&lt;/strong&gt;: The style (CSS behaviour) of your blog. The default (and very common used) is &lt;em&gt;“minima”&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;permalink&lt;/strong&gt;: The configuration of the URL shown in the Address bar. By default, it comes from a well defined structure: &lt;em&gt;”/:categories/:year/:month/:day/:title”&lt;/em&gt;. If you prefer a simpler structure, you can adjust this item.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For instance, my blog has the following configuration:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;title: &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PauloBMSousa&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Blog&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;email: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;paulo.beniciol@gmail.com&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;description: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Personal Blog (incluing Family and Professional facts).&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;baseurl: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/github-blog&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;url: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://paulobmsousa.github.io&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;twitter_username: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paulobmsousa&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;github_username:  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paulobmsousa&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;markdown: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kramdown&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;theme: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minima&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;permalink: &lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/:title
+plugins:
+  - jekyll-feed
+comments: true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;posts-general-structure&quot;&gt;Posts: General Structure&lt;/h1&gt;
+
+&lt;p&gt;It is time to take some notes aboute the most important structure: how posts are organized.&lt;/p&gt;
+
+&lt;h2 id=&quot;file-structure&quot;&gt;File structure&lt;/h2&gt;
+
+&lt;p&gt;Internally, Jekyll uses some folders in order to generate the minimal self-contained post structure. However, sometimes, the basic configuration must be complemented.&lt;/p&gt;
+
+&lt;p&gt;For instance, if you type &lt;code class=&quot;highlighter-rouge&quot;&gt;_jekyll new myblog&lt;/code&gt;, Jekylll will perform something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:\&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PERSONAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myblog&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Running&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PERSONAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myblog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fetching&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rubygems&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/...........&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fetching&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rubygems&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/.&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Resolving&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;public_suffix&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addressable&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundler&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorator&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;concurrent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eventmachine&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mingw32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http_parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rb&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;websocket&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ffi&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mingw32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forwardable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extended&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i18n&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fsevent&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inotify&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sass&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby_dep&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kramdown&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.17&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;liquid&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mercenary&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pathutil&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rouge&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;safe_yaml&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minima&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tzinfo&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tzinfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wdm&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;complete!&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gemfile&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;installed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Use&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`bundle info [gemname]`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;see&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundled&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;installed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;New&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;installed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PERSONAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myblog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In fact, these folders and files are created:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-windows&quot; data-lang=&quot;windows&quot;&gt;30/04/2019  14:52    &amp;lt;DIR&amp;gt;          .
+30/04/2019  14:52    &amp;lt;DIR&amp;gt;          ..
+30/04/2019  14:52                35 .gitignore
+30/04/2019  14:52               398 404.html
+30/04/2019  14:52               539 about.md
+30/04/2019  14:52             1.069 Gemfile
+30/04/2019  14:52             1.857 Gemfile.lock
+30/04/2019  14:52               175 index.md
+30/04/2019  14:52             1.652 _config.yml
+30/04/2019  14:52    &amp;lt;DIR&amp;gt;          _posts&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use aditional configuration folders in the default theme (for instance, &lt;em&gt;minima&lt;/em&gt;). They are located in a proper folder, set during the bundle installation.&lt;/p&gt;
+
+&lt;p&gt;You can use commands in order to identify &lt;em&gt;where&lt;/em&gt; a specific bundle is installed in your computer: &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle show minima&lt;/code&gt;.  For instance, in my version, (2.5.0) the minima bundle contains:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-windows&quot; data-lang=&quot;windows&quot;&gt;04/04/2019  15:39    &amp;lt;DIR&amp;gt;          .
+04/04/2019  15:39    &amp;lt;DIR&amp;gt;          ..
+04/04/2019  15:39    &amp;lt;DIR&amp;gt;          assets
+04/04/2019  15:39             1.115 LICENSE.txt
+04/04/2019  15:39             8.848 README.md
+04/04/2019  15:39    &amp;lt;DIR&amp;gt;          _includes
+04/04/2019  15:39    &amp;lt;DIR&amp;gt;          _layouts
+04/04/2019  15:39    &amp;lt;DIR&amp;gt;          _sass&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Tip&lt;/strong&gt;: It is a good idea to copy the bundle configuration folders to your own personal blog directory, if you want to make different configurations to your blog.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;posts-and-markdown&quot;&gt;Posts and Markdown&lt;/h2&gt;
+
+&lt;p&gt;One of the main advantages of using Jekyll in order to create posts is the user-friendly language to create and update posts.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Firstly, all the posts must be located inside the &lt;strong&gt;_posts&lt;/strong&gt; directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Each one must have the following pattern in the filename: &lt;code class=&quot;highlighter-rouge&quot;&gt;[year]-[month]-[day]-[title].markdown&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Inside, you can use an ordinary text plain file, using, basically, a &lt;strong&gt;markdown&lt;/strong&gt; syntax. In &lt;a href=&quot;https://jekyllrb.com/docs/posts/&quot;&gt;Posts section&lt;/a&gt; you can see some syntax fundamentals.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;home-configuration&quot;&gt;Home configuration&lt;/h2&gt;
+
+&lt;p&gt;Posts are shown according the descendent time order (most recent first). This pattern is conventional and you should respect this organization.&lt;/p&gt;
+
+&lt;p&gt;In order to get it, my &lt;strong&gt;home.html&lt;/strong&gt; is set as shown below:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;layout: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;home&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%- if site.posts.size &amp;gt; 0 -%}
+    &amp;lt;h2 class=&quot;post-list-heading&quot;&amp;gt;{{ page.list_title | default: &quot;Posts&quot; }&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&amp;gt;
+    &amp;lt;ul class=&quot;post-list&quot;&amp;gt;
+      {%- for post in site.posts -%}
+      &amp;lt;li&amp;gt;
+        {%- assign date_format = site.minima.date_format | default: &quot;%b %-d, %Y&quot; -%}
+        &amp;lt;span class=&quot;post-meta&quot;&amp;gt;{{ post.date | date: date_format }}&amp;lt;/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{{ post.url | relative_url }}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;escape&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&amp;gt;
+        &amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%- if site.show_excerpts -%}
+          {{ post.excerpt }&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%- endif -%}
+      &amp;lt;/li&amp;gt;
+      {%- endfor -%}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ul&amp;gt;
+    &amp;lt;p class=&quot;rss-subscribe&quot;&amp;gt;subscribe
+      &amp;lt;a href=&quot;{{ &quot;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; | relative_url }}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;via&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RSS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/a&amp;gt;
+    &amp;lt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%- else -%}
+    &amp;lt;h2&amp;gt;No posts found&amp;lt;/h2&amp;gt;
+  {%- endif -%}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note that there is a test (&lt;em&gt;if&lt;/em&gt; clause) in order to see if there is more than one post and, inside, a loop (&lt;em&gt;for&lt;/em&gt; statement) that looks for post and shows according the date.&lt;/p&gt;
+
+&lt;h2 id=&quot;posts-configuration&quot;&gt;Posts configuration&lt;/h2&gt;
+
+&lt;p&gt;Each posts usually follow the &lt;strong&gt;post.html&lt;/strong&gt; template. In my case, the text is organized as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;layout: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post h-entry&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemscope&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://schema.org/BlogPosting&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post-header&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post-title p-name&quot;&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;itemprop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name headline&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;escape&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;
+    &amp;lt;p class=&quot;post-meta&quot;&amp;gt;
+      &amp;lt;time class=&quot;dt-published&quot; 
+        datetime=&quot;{{ page.date | date_to_xmlschema }}&quot; 
+        itemprop=&quot;datePublished&quot;&amp;gt;
+          {%- assign date_format = site.minima.date_format | default: &quot;%b %-d, %Y&quot; -%}
+        &amp;lt;b&amp;gt;{{ page.date | date: date_format }}&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/time&amp;gt;
+      {%- if page.author -%}
+        • &amp;lt;span itemprop=&quot;author&quot; 
+           itemscope itemtype=&quot;http:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+            &amp;lt;span class=&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;card&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; itemprop=&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+             {{ page.author }}
+            &amp;lt;/span&amp;gt;
+          &amp;lt;/span&amp;gt;
+      {%- endif -%}&amp;lt;/p&amp;gt;
+  &amp;lt;/header&amp;gt;
+  &amp;lt;div class=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; itemprop=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;articleBody&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+    {{ content }}
+  &amp;lt;/div&amp;gt;
+&amp;lt;/article&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;aditional-configuration&quot;&gt;Aditional configuration&lt;/h3&gt;
+
+&lt;p&gt;Note that we are dealing with two configurations in this page that can be used in order to improve the quality of the posts and the feedback mechanism to the readers.&lt;/p&gt;
+
+&lt;h4 id=&quot;using-the-time-to-read&quot;&gt;Using the time to read&lt;/h4&gt;
+
+&lt;p&gt;The first step is how calculate the most probable time that an ordinary reader can take in order to read the post.&lt;/p&gt;
+
+&lt;p&gt;It can be done according the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Include in the beginning of  &lt;strong&gt;posts.html&lt;/strong&gt; an inclusion header that can be used to calculate the time:  &lt;code class=&quot;highlighter-rouge&quot;&gt;{% include minutes-to-read.html %}&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Craate the above mentioned file inside the &lt;strong&gt;_includes&lt;/strong&gt; directory. In my case, the content is shown:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% assign &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number_of_words&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%}
+{% if words &amp;lt; 360 %}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% assign &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minutesToRead&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1 minute to read'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% else &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% assign &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timeWords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;divided_by: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% assign &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minutesToRead&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timeWords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;append: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;' minutes to read'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% endif &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, include the variable that can be used in order to calculate this time. For instance, one called &lt;strong&gt;minutesToRead&lt;/strong&gt;, in a part of the &lt;strong&gt;posts.html&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;i&amp;gt;Estimated time: {{minutesText}}&amp;lt;/i&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;including-discussion-plugin&quot;&gt;Including Discussion Plugin&lt;/h4&gt;
+
+&lt;p&gt;A real post requires a feedback mechanism that allows readers to comment the posts. In my case, I preferred to use &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It can be done according the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Firstly, you need to register (open a free account) in the &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; web-site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Include in the ending of &lt;strong&gt;posts.html&lt;/strong&gt; a script that can be copyied from Disqus, after the configuration:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;disqus_thread&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+(function() { /&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DON&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;');
+  s.src = '&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paulobmsousa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;js&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;';
+  s.setAttribute('&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timestamp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&amp;gt;
+&amp;lt;noscript&amp;gt;
+  Please enable JavaScript to view the
+  &amp;lt;a href=&quot;https:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ref_noscript&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+    comments powered by Disqus.
+  &amp;lt;/a&amp;gt;
+&amp;lt;/noscript&amp;gt;
+&amp;lt;a class=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; href=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relative_url&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; hidden&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;using-github&quot;&gt;Using GitHub&lt;/h1&gt;
+
+&lt;p&gt;Now, it is time to publish your site in a server. For simplicity, let us consider the &lt;a href=&quot;https://about.gitlab.com/product/pages/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Firstly, considering that you have already your account (otherwise, you must follow the procedure in order to open it). Now, let us create your own repository in order to publish after.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Tip&lt;/strong&gt;: When you create a &lt;strong&gt;new repository&lt;/strong&gt;, Github will instruct you showing some commands like these:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;...or create a new repository on the command line
+
+echo &quot;# techblog&quot; &amp;gt;&amp;gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/paulobmsousa/techblog.git
+git push -u origin master
+
+...or push an existing repository from the command line
+
+git remote add origin https://github.com/paulobmsousa/techblog.git
+git push -u origin master
+
+...or import code from another repository&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can initialize this repository with code from a Subversion, Mercurial, or TFS project.&lt;/p&gt;
+
+&lt;p&gt;Follow the steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a README file. For simplicity, you can do it by: &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;# MyBlog &amp;gt;&amp;gt; README.md&quot;&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Initialize the git &lt;em&gt;inside&lt;/em&gt; your blog folder: &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Include all the files: &lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create your first commit: &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;First commit&quot;&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mirror your local repository to the remote one, using &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add origin git@github.com:[git_username]/[blogfolder]&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Publish your posts: &lt;code class=&quot;highlighter-rouge&quot;&gt;git push -u origin master&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b [branchname]&lt;/code&gt;. In this case, &lt;em&gt;branchname&lt;/em&gt; can be, for instance, &lt;strong&gt;gh-pages&lt;/strong&gt; (alusion to github pages);&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the entire content of the master to the new branch: &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin [branchname]&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now, you can check your Github Pages, according the default address: &lt;strong&gt;[git_username].github.io/[blogname]&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Remember, whenever it is necessary, you must update your repository, by using &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m [comment]&lt;/code&gt;. And aditional files must be added before the commit, by using: &lt;code class=&quot;highlighter-rouge&quot;&gt;git add [filename]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;dr-jekyll&quot;&gt;Dr. Jekyll&lt;/h1&gt;
+
+&lt;p&gt;Ok, the minimal information to post in your own blog is done. In fact, Jekyll is far easier from building sites by using HTML or CSS. Thanks to Ruby and Gems, many facilities are already provided. They come from the &lt;a href=&quot;https://en.wikipedia.org/wiki/Convention_over_configuration&quot;&gt;CoC (Convention over Configuration)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But all these things have a price: you must follow the conventions and obey the configuration. Small changes can cause big problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://static.tvtropes.org/pmwiki/pub/images/drjekyllmrhyde_01.jpg&quot; alt=&quot;Hyde&quot; title=&quot;Dr Jekyll Hyde&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, a complete course of Jekyll and its advanteges is the better way to learn and practice the use of this very powerfull (and simple) tool.&lt;/p&gt;</content><author><name></name></author><summary type="html">Preview</summary></entry><entry><title type="html">Jekyll Default Page</title><link href="http://localhost:4000/github-blog/jekyll-default" rel="alternate" type="text/html" title="Jekyll Default Page" /><published>2019-04-01T15:38:58-04:00</published><updated>2019-04-01T15:38:58-04:00</updated><id>http://localhost:4000/github-blog/jekyll-default</id><content type="html" xml:base="http://localhost:4000/github-blog/jekyll-default">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

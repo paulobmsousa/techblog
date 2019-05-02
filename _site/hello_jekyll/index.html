@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Hello, Jekyll | PauloBMSousa Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Hello, Jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Preview" />
+<meta property="og:description" content="Preview" />
+<link rel="canonical" href="http://localhost:4000/github-blog/hello_jekyll/" />
+<meta property="og:url" content="http://localhost:4000/github-blog/hello_jekyll/" />
+<meta property="og:site_name" content="PauloBMSousa Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-30T09:38:58-04:00" />
+<script type="application/ld+json">
+{"headline":"Hello, Jekyll","dateModified":"2019-04-30T09:38:58-04:00","datePublished":"2019-04-30T09:38:58-04:00","@type":"BlogPosting","url":"http://localhost:4000/github-blog/hello_jekyll/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/github-blog/hello_jekyll/"},"description":"Preview","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/github-blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/github-blog/feed.xml" title="PauloBMSousa Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/github-blog/">PauloBMSousa Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/github-blog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Hello, Jekyll</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-30T09:38:58-04:00" itemprop="datePublished"><b>Apr 30, 2019</b> - <i>Estimated time: 14 minutes to read</i>
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="preview">Preview</h1>
+
+<p><img src="https://jekyllrb.com/img/logo-2x.png" alt="Jekyll Logo" title="Jekyll Logo" /></p>
+
+<p>In this first post, I have noted that it could be a good idea to summarize how to create <strong>posts</strong>, using <a href="https://jekyllrb.com/">Jekyll</a>, that, in short, is one of the simplest and powerfull tool to create blogs.</p>
+
+<p>Firstly, some reasons to chose Jekyll:</p>
+<ul>
+  <li>The simplicity (in general, static generators that allows to use HTML and CSS);</li>
+  <li>No database needed (which implies that is simpler to deploy in a server - specially <a href="https://about.gitlab.com/product/pages/">GitLab pages</a>);</li>
+  <li>Markdown syntax (user-friendly).</li>
+</ul>
+
+<p>Now, let us start the procedure to the first blog…</p>
+
+<h1 id="basic-procedure">Basic Procedure</h1>
+
+<ol>
+  <li>
+    <p>In the Jekyll site <a href="https://jekyllrb.com/docs/">Jekyll site</a> follow the instructions.</p>
+
+    <ul>
+      <li>
+        <p>Install a full Ruby development environment;</p>
+      </li>
+      <li>
+        <p>Install Jekyll and bundler gems;</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Use the following command to create your own blog: <code class="highlighter-rouge">_jekyll new blog_name</code></p>
+  </li>
+  <li>
+    <p>Inside the blog folder, you can start the server: <code class="highlighter-rouge">bundle exec jekyll serve</code></p>
+  </li>
+  <li>
+    <p>By default, the Jekyll server starts on socket <strong>4000</strong>.</p>
+  </li>
+</ol>
+
+<h1 id="common-problems">Common Problems</h1>
+
+<p>Of course, sometimes following the above simple steps cannot work as expected.</p>
+
+<ul>
+  <li>
+    <p>Jekyll demands Ruby and RubyGems and, of course, installation problems must be solved, before starting using Jekyll.</p>
+  </li>
+  <li>
+    <p>Under Windows environment, the process for installing Ruby is better conducted by using <a href="https://rubyinstaller.org/">Ruby Installer</a>.</p>
+  </li>
+  <li>
+    <p>Aditionally, the Jekyll site has a step-by-step procedure to help Windows users: <a href="https://jekyllrb.com/docs/installation/windows/">Jekyll on Windows</a>.</p>
+  </li>
+  <li>
+    <p>Note that, probably you are using the <em>minima</em> theme bundle, that can be replaced whenever you want. But it is ideal for most cases.</p>
+  </li>
+</ul>
+
+<h1 id="configuration-configyml">Configuration: config.yml</h1>
+
+<p>The <strong>config.yml</strong> is the main configuration file and it is loaded once (not in run-time), what means that, differently from Posts, you need to rebuild (<code class="highlighter-rouge">bundle exec jekyll build</code>) and restart (<code class="highlighter-rouge">bundle exec jekyll serve</code>).</p>
+
+<p>The main sections are:</p>
+
+<ul>
+  <li>title</li>
+  <li>description</li>
+  <li>baseurl</li>
+  <li>url</li>
+  <li>markdown</li>
+</ul>
+
+<p>Some references that are useful can also be declared, such as:</p>
+<ul>
+  <li>email</li>
+  <li>twitter_username</li>
+  <li>github_username</li>
+  <li>theme</li>
+</ul>
+
+<p>Most are self intuitive, however, <strong>baseurl</strong>, <strong>theme</strong> and <strong>markdown</strong> are specially important. Let us describe:</p>
+
+<ul>
+  <li>
+    <p><strong>baseurl</strong>: The relative path to the site. If it is left blanked, it will point to the root directory from the <em>url</em>. It is suggested that you define a specific <em>baseurl</em> to your blog;</p>
+  </li>
+  <li>
+    <p><strong>markdown</strong>: The default markdown style. The option <em>“kramdown”</em> is the default for Jekyll;</p>
+  </li>
+  <li>
+    <p><strong>theme</strong>: The style (CSS behaviour) of your blog. The default (and very common used) is <em>“minima”</em>.</p>
+  </li>
+  <li>
+    <p><strong>permalink</strong>: The configuration of the URL shown in the Address bar. By default, it comes from a well defined structure: <em>”/:categories/:year/:month/:day/:title”</em>. If you prefer a simpler structure, you can adjust this item.</p>
+  </li>
+</ul>
+
+<p>For instance, my blog has the following configuration:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="ss">title: </span><span class="no">PauloBMSousa</span> <span class="no">Blog</span>
+<span class="ss">email: </span><span class="s2">"paulo.beniciol@gmail.com"</span>
+<span class="ss">description: </span><span class="s2">"Personal Blog (incluing Family and Professional facts)."</span>
+<span class="ss">baseurl: </span><span class="s2">"/github-blog"</span>
+<span class="ss">url: </span><span class="s2">"https://paulobmsousa.github.io"</span>
+<span class="ss">twitter_username: </span><span class="n">paulobmsousa</span>
+<span class="ss">github_username:  </span><span class="n">paulobmsousa</span>
+<span class="ss">markdown: </span><span class="n">kramdown</span>
+<span class="ss">theme: </span><span class="n">minima</span>
+<span class="ss">permalink: </span><span class="sr">/:title
+plugins:
+  - jekyll-feed
+comments: true</span></code></pre></figure>
+
+<h1 id="posts-general-structure">Posts: General Structure</h1>
+
+<p>It is time to take some notes aboute the most important structure: how posts are organized.</p>
+
+<h2 id="file-structure">File structure</h2>
+
+<p>Internally, Jekyll uses some folders in order to generate the minimal self-contained post structure. However, sometimes, the basic configuration must be complemented.</p>
+
+<p>For instance, if you type <code class="highlighter-rouge">_jekyll new myblog</code>, Jekylll will perform something like this:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">C</span><span class="p">:\</span><span class="no">PERSONAL</span><span class="o">&gt;</span> <span class="n">jekyll</span> <span class="n">new</span> <span class="n">myblog</span>
+<span class="no">Running</span> <span class="n">bundle</span> <span class="n">install</span> <span class="k">in</span> <span class="no">C</span><span class="ss">:/</span><span class="no">PERSONAL</span><span class="o">/</span><span class="n">myblog</span><span class="o">...</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Fetching</span> <span class="n">gem</span> <span class="n">metadata</span> <span class="n">from</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">rubygems</span><span class="p">.</span><span class="nf">org</span><span class="o">/...........</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Fetching</span> <span class="n">gem</span> <span class="n">metadata</span> <span class="n">from</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">rubygems</span><span class="p">.</span><span class="nf">org</span><span class="o">/.</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Resolving</span> <span class="n">dependencies</span><span class="o">...</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">public_suffix</span> <span class="mf">3.0</span><span class="o">.</span><span class="mi">3</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">addressable</span> <span class="mf">2.6</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">bundler</span> <span class="mf">2.0</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">colorator</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">concurrent</span><span class="o">-</span><span class="n">ruby</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">5</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">eventmachine</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">7</span> <span class="p">(</span><span class="n">x64</span><span class="o">-</span><span class="n">mingw32</span><span class="p">)</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">http_parser</span><span class="p">.</span><span class="nf">rb</span> <span class="mf">0.6</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">em</span><span class="o">-</span><span class="n">websocket</span> <span class="mf">0.5</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">ffi</span> <span class="mf">1.10</span><span class="o">.</span><span class="mi">0</span> <span class="p">(</span><span class="n">x64</span><span class="o">-</span><span class="n">mingw32</span><span class="p">)</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">forwardable</span><span class="o">-</span><span class="n">extended</span> <span class="mf">2.6</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">i18n</span> <span class="mf">0.9</span><span class="o">.</span><span class="mi">5</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">rb</span><span class="o">-</span><span class="n">fsevent</span> <span class="mf">0.10</span><span class="o">.</span><span class="mi">3</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">rb</span><span class="o">-</span><span class="n">inotify</span> <span class="mf">0.10</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">sass</span><span class="o">-</span><span class="n">listen</span> <span class="mf">4.0</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">sass</span> <span class="mf">3.7</span><span class="o">.</span><span class="mi">4</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">jekyll</span><span class="o">-</span><span class="n">sass</span><span class="o">-</span><span class="n">converter</span> <span class="mf">1.5</span><span class="o">.</span><span class="mi">2</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">ruby_dep</span> <span class="mf">1.5</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">listen</span> <span class="mf">3.1</span><span class="o">.</span><span class="mi">5</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">jekyll</span><span class="o">-</span><span class="n">watch</span> <span class="mf">2.2</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">kramdown</span> <span class="mf">1.17</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">liquid</span> <span class="mf">4.0</span><span class="o">.</span><span class="mi">3</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">mercenary</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">6</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">pathutil</span> <span class="mf">0.16</span><span class="o">.</span><span class="mi">2</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">rouge</span> <span class="mf">3.3</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">safe_yaml</span> <span class="mf">1.0</span><span class="o">.</span><span class="mi">5</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">jekyll</span> <span class="mf">3.8</span><span class="o">.</span><span class="mi">5</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">jekyll</span><span class="o">-</span><span class="n">feed</span> <span class="mf">0.12</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">jekyll</span><span class="o">-</span><span class="n">seo</span><span class="o">-</span><span class="n">tag</span> <span class="mf">2.6</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">minima</span> <span class="mf">2.5</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">tzinfo</span> <span class="mf">2.0</span><span class="o">.</span><span class="mi">0</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">tzinfo</span><span class="o">-</span><span class="n">data</span> <span class="mf">1.2019</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Using</span> <span class="n">wdm</span> <span class="mf">0.1</span><span class="o">.</span><span class="mi">1</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Bundle</span> <span class="n">complete!</span> <span class="mi">5</span> <span class="no">Gemfile</span> <span class="n">dependencies</span><span class="p">,</span> <span class="mi">32</span> <span class="n">gems</span> <span class="n">now</span> <span class="n">installed</span><span class="o">.</span>
+  <span class="no">Bundler</span><span class="p">:</span> <span class="no">Use</span> <span class="sb">`bundle info [gemname]`</span> <span class="n">to</span> <span class="n">see</span> <span class="n">where</span> <span class="n">a</span> <span class="n">bundled</span> <span class="n">gem</span> <span class="n">is</span> <span class="n">installed</span><span class="o">.</span>
+<span class="no">New</span> <span class="n">jekyll</span> <span class="n">site</span> <span class="n">installed</span> <span class="k">in</span> <span class="no">C</span><span class="ss">:/</span><span class="no">PERSONAL</span><span class="o">/</span><span class="n">myblog</span><span class="o">.</span></code></pre></figure>
+
+<p>In fact, these folders and files are created:</p>
+
+<figure class="highlight"><pre><code class="language-windows" data-lang="windows">30/04/2019  14:52    &lt;DIR&gt;          .
+30/04/2019  14:52    &lt;DIR&gt;          ..
+30/04/2019  14:52                35 .gitignore
+30/04/2019  14:52               398 404.html
+30/04/2019  14:52               539 about.md
+30/04/2019  14:52             1.069 Gemfile
+30/04/2019  14:52             1.857 Gemfile.lock
+30/04/2019  14:52               175 index.md
+30/04/2019  14:52             1.652 _config.yml
+30/04/2019  14:52    &lt;DIR&gt;          _posts</code></pre></figure>
+
+<p>As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use aditional configuration folders in the default theme (for instance, <em>minima</em>). They are located in a proper folder, set during the bundle installation.</p>
+
+<p>You can use commands in order to identify <em>where</em> a specific bundle is installed in your computer: <code class="highlighter-rouge">bundle show minima</code>.  For instance, in my version, (2.5.0) the minima bundle contains:</p>
+
+<figure class="highlight"><pre><code class="language-windows" data-lang="windows">04/04/2019  15:39    &lt;DIR&gt;          .
+04/04/2019  15:39    &lt;DIR&gt;          ..
+04/04/2019  15:39    &lt;DIR&gt;          assets
+04/04/2019  15:39             1.115 LICENSE.txt
+04/04/2019  15:39             8.848 README.md
+04/04/2019  15:39    &lt;DIR&gt;          _includes
+04/04/2019  15:39    &lt;DIR&gt;          _layouts
+04/04/2019  15:39    &lt;DIR&gt;          _sass</code></pre></figure>
+
+<ul>
+  <li><strong>Tip</strong>: It is a good idea to copy the bundle configuration folders to your own personal blog directory, if you want to make different configurations to your blog.</li>
+</ul>
+
+<h2 id="posts-and-markdown">Posts and Markdown</h2>
+
+<p>One of the main advantages of using Jekyll in order to create posts is the user-friendly language to create and update posts.</p>
+
+<ol>
+  <li>
+    <p>Firstly, all the posts must be located inside the <strong>_posts</strong> directory.</p>
+  </li>
+  <li>
+    <p>Each one must have the following pattern in the filename: <code class="highlighter-rouge">[year]-[month]-[day]-[title].markdown</code>.</p>
+  </li>
+  <li>
+    <p>Inside, you can use an ordinary text plain file, using, basically, a <strong>markdown</strong> syntax. In <a href="https://jekyllrb.com/docs/posts/">Posts section</a> you can see some syntax fundamentals.</p>
+  </li>
+</ol>
+
+<h2 id="home-configuration">Home configuration</h2>
+
+<p>Posts are shown according the descendent time order (most recent first). This pattern is conventional and you should respect this organization.</p>
+
+<p>In order to get it, my <strong>home.html</strong> is set as shown below:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">layout: </span><span class="n">default</span>
+<span class="o">---</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="k">class</span><span class="o">=</span><span class="s2">"home"</span><span class="o">&gt;</span>
+  <span class="p">{</span><span class="sx">%- if site.posts.size &gt; 0 -%}
+    &lt;h2 class="post-list-heading"&gt;{{ page.list_title | default: "Posts" }</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/h2&gt;
+    &lt;ul class="post-list"&gt;
+      {%- for post in site.posts -%}
+      &lt;li&gt;
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        &lt;span class="post-meta"&gt;{{ post.date | date: date_format }}&lt;/s</span><span class="n">pan</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">a</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post-link"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"{{ post.url | relative_url }}"</span><span class="o">&gt;</span>
+            <span class="p">{{</span> <span class="n">post</span><span class="p">.</span><span class="nf">title</span> <span class="o">|</span> <span class="n">escape</span> <span class="p">}}</span>
+          <span class="o">&lt;</span><span class="sr">/a&gt;
+        &lt;/</span><span class="n">h3</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="sx">%- if site.show_excerpts -%}
+          {{ post.excerpt }</span><span class="p">}</span>
+        <span class="p">{</span><span class="sx">%- endif -%}
+      &lt;/li&gt;
+      {%- endfor -%}</span>
+    <span class="o">&lt;</span><span class="sr">/ul&gt;
+    &lt;p class="rss-subscribe"&gt;subscribe
+      &lt;a href="{{ "/</span><span class="n">feed</span><span class="p">.</span><span class="nf">xml</span><span class="s2">" | relative_url }}"</span><span class="o">&gt;</span><span class="n">via</span> <span class="no">RSS</span><span class="o">&lt;</span><span class="sr">/a&gt;
+    &lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+  <span class="p">{</span><span class="sx">%- else -%}
+    &lt;h2&gt;No posts found&lt;/h2&gt;
+  {%- endif -%}</span>
+<span class="o">&lt;</span><span class="sr">/div&gt;</span></code></pre></figure>
+
+<p>Note that there is a test (<em>if</em> clause) in order to see if there is more than one post and, inside, a loop (<em>for</em> statement) that looks for post and shows according the date.</p>
+
+<h2 id="posts-configuration">Posts configuration</h2>
+
+<p>Each posts usually follow the <strong>post.html</strong> template. In my case, the text is organized as follows:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">layout: </span><span class="n">default</span>
+<span class="o">---</span>
+<span class="o">&lt;</span><span class="n">article</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post h-entry"</span> <span class="n">itemscope</span> <span class="n">itemtype</span><span class="o">=</span><span class="s2">"http://schema.org/BlogPosting"</span><span class="o">&gt;</span>
+
+  <span class="o">&lt;</span><span class="n">header</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post-header"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">h1</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post-title p-name"</span> 
+        <span class="n">itemprop</span><span class="o">=</span><span class="s2">"name headline"</span><span class="o">&gt;</span><span class="p">{{</span> <span class="n">page</span><span class="p">.</span><span class="nf">title</span> <span class="o">|</span> <span class="n">escape</span> <span class="p">}}</span>
+    <span class="o">&lt;</span><span class="sr">/h1&gt;
+    &lt;p class="post-meta"&gt;
+      &lt;time class="dt-published" 
+        datetime="{{ page.date | date_to_xmlschema }}" 
+        itemprop="datePublished"&gt;
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        &lt;b&gt;{{ page.date | date: date_format }}&lt;/</span><span class="n">b</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/time&gt;
+      {%- if page.author -%}
+        • &lt;span itemprop="author" 
+           itemscope itemtype="http:/</span><span class="o">/</span><span class="n">schema</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span><span class="no">Person</span><span class="s2">"&gt;
+            &lt;span class="</span><span class="nb">p</span><span class="o">-</span><span class="n">author</span> <span class="n">h</span><span class="o">-</span><span class="n">card</span><span class="s2">" itemprop="</span><span class="nb">name</span><span class="s2">"&gt;
+             {{ page.author }}
+            &lt;/span&gt;
+          &lt;/span&gt;
+      {%- endif -%}&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;div class="</span><span class="n">post</span><span class="o">-</span><span class="n">content</span> <span class="n">e</span><span class="o">-</span><span class="n">content</span><span class="s2">" itemprop="</span><span class="n">articleBody</span><span class="s2">"&gt;
+    {{ content }}
+  &lt;/div&gt;
+&lt;/article&gt;</span></code></pre></figure>
+
+<h3 id="aditional-configuration">Aditional configuration</h3>
+
+<p>Note that we are dealing with two configurations in this page that can be used in order to improve the quality of the posts and the feedback mechanism to the readers.</p>
+
+<h4 id="using-the-time-to-read">Using the time to read</h4>
+
+<p>The first step is how calculate the most probable time that an ordinary reader can take in order to read the post.</p>
+
+<p>It can be done according the following steps:</p>
+
+<ol>
+  <li>
+    <p>Include in the beginning of  <strong>posts.html</strong> an inclusion header that can be used to calculate the time:  <code class="highlighter-rouge">{% include minutes-to-read.html %}</code></p>
+  </li>
+  <li>
+    <p>Craate the above mentioned file inside the <strong>_includes</strong> directory. In my case, the content is shown:</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">{</span><span class="sx">% assign </span><span class="n">words</span> <span class="o">=</span> <span class="n">content</span> <span class="o">|</span> <span class="n">number_of_words</span> <span class="sx">%}
+{% if words &lt; 360 %}</span>
+  <span class="p">{</span><span class="sx">% assign </span><span class="n">minutesToRead</span> <span class="o">=</span> <span class="s1">'1 minute to read'</span> <span class="o">%</span><span class="p">}</span>
+<span class="p">{</span><span class="sx">% else </span><span class="o">%</span><span class="p">}</span>
+  <span class="p">{</span><span class="sx">% assign </span><span class="n">timeWords</span> <span class="o">=</span> <span class="n">words</span> <span class="o">|</span> <span class="ss">divided_by: </span><span class="mi">180</span> <span class="o">%</span><span class="p">}</span>
+  <span class="p">{</span><span class="sx">% assign </span><span class="n">minutesToRead</span> <span class="o">=</span> <span class="n">timeWords</span> <span class="o">|</span> <span class="ss">append: </span><span class="s1">' minutes to read'</span> <span class="o">%</span><span class="p">}</span>
+<span class="p">{</span><span class="sx">% endif </span><span class="o">%</span><span class="p">}</span></code></pre></figure>
+
+<p>Now, include the variable that can be used in order to calculate this time. For instance, one called <strong>minutesToRead</strong>, in a part of the <strong>posts.html</strong>:  <code class="highlighter-rouge">&lt;i&gt;Estimated time: {{minutesText}}&lt;/i&gt;</code></p>
+
+<h4 id="including-discussion-plugin">Including Discussion Plugin</h4>
+
+<p>A real post requires a feedback mechanism that allows readers to comment the posts. In my case, I preferred to use <a href="https://disqus.com/">Disqus</a>.</p>
+
+<p>It can be done according the following steps:</p>
+
+<ol>
+  <li>
+    <p>Firstly, you need to register (open a free account) in the <a href="https://disqus.com/">Disqus</a> web-site.</p>
+  </li>
+  <li>
+    <p>Include in the ending of <strong>posts.html</strong> a script that can be copyied from Disqus, after the configuration:</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"disqus_thread"</span><span class="o">&gt;&lt;</span><span class="sr">/div&gt;
+&lt;script&gt;
+(function() { /</span><span class="o">/</span> <span class="no">DON</span><span class="s1">'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('</span><span class="n">script</span><span class="s1">');
+  s.src = '</span><span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">paulobmsousa</span><span class="p">.</span><span class="nf">disqus</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">embed</span><span class="p">.</span><span class="nf">js</span><span class="s1">';
+  s.setAttribute('</span><span class="n">data</span><span class="o">-</span><span class="n">timestamp</span><span class="err">'</span><span class="p">,</span> <span class="o">+</span><span class="n">new</span> <span class="no">Date</span><span class="p">());</span>
+  <span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="nf">head</span> <span class="o">||</span> <span class="n">d</span><span class="p">.</span><span class="nf">body</span><span class="p">).</span><span class="nf">appendChild</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+<span class="p">})();</span>
+<span class="o">&lt;</span><span class="sr">/script&gt;
+&lt;noscript&gt;
+  Please enable JavaScript to view the
+  &lt;a href="https:/</span><span class="o">/</span><span class="n">disqus</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="p">?</span><span class="n">ref_noscript</span><span class="s2">"&gt;
+    comments powered by Disqus.
+  &lt;/a&gt;
+&lt;/noscript&gt;
+&lt;a class="</span><span class="n">u</span><span class="o">-</span><span class="n">url</span><span class="s2">" href="</span><span class="p">{{</span> <span class="n">page</span><span class="p">.</span><span class="nf">url</span> <span class="o">|</span> <span class="n">relative_url</span> <span class="p">}}</span><span class="s2">" hidden&gt;&lt;/a&gt;</span></code></pre></figure>
+
+<h1 id="using-github">Using GitHub</h1>
+
+<p>Now, it is time to publish your site in a server. For simplicity, let us consider the <a href="https://about.gitlab.com/product/pages/">Github Pages</a>.</p>
+
+<p>Firstly, considering that you have already your account (otherwise, you must follow the procedure in order to open it). Now, let us create your own repository in order to publish after.</p>
+
+<ul>
+  <li><strong>Tip</strong>: When you create a <strong>new repository</strong>, Github will instruct you showing some commands like these:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-git" data-lang="git">...or create a new repository on the command line
+
+echo "# techblog" &gt;&gt; README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/paulobmsousa/techblog.git
+git push -u origin master
+
+...or push an existing repository from the command line
+
+git remote add origin https://github.com/paulobmsousa/techblog.git
+git push -u origin master
+
+...or import code from another repository</code></pre></figure>
+
+<p>You can initialize this repository with code from a Subversion, Mercurial, or TFS project.</p>
+
+<p>Follow the steps:</p>
+
+<ol>
+  <li>
+    <p>Create a README file. For simplicity, you can do it by: <code class="highlighter-rouge">echo "# MyBlog &gt;&gt; README.md"</code>;</p>
+  </li>
+  <li>
+    <p>Initialize the git <em>inside</em> your blog folder: <code class="highlighter-rouge">git init</code>;</p>
+  </li>
+  <li>
+    <p>Include all the files: <code class="highlighter-rouge">git add .</code>;</p>
+  </li>
+  <li>
+    <p>Create your first commit: <code class="highlighter-rouge">git commit -m "First commit"</code>;</p>
+  </li>
+  <li>
+    <p>Mirror your local repository to the remote one, using <code class="highlighter-rouge">git remote add origin git@github.com:[git_username]/[blogfolder]</code>;</p>
+  </li>
+  <li>
+    <p>Publish your posts: <code class="highlighter-rouge">git push -u origin master</code>.</p>
+  </li>
+  <li>
+    <p>Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: <code class="highlighter-rouge">git checkout -b [branchname]</code>. In this case, <em>branchname</em> can be, for instance, <strong>gh-pages</strong> (alusion to github pages);</p>
+  </li>
+  <li>
+    <p>Copy the entire content of the master to the new branch: <code class="highlighter-rouge">git push origin [branchname]</code>;</p>
+  </li>
+  <li>
+    <p>Now, you can check your Github Pages, according the default address: <strong>[git_username].github.io/[blogname]</strong></p>
+  </li>
+</ol>
+
+<p>Remember, whenever it is necessary, you must update your repository, by using <code class="highlighter-rouge">git commit -m [comment]</code>. And aditional files must be added before the commit, by using: <code class="highlighter-rouge">git add [filename]</code>.</p>
+
+<h1 id="dr-jekyll">Dr. Jekyll</h1>
+
+<p>Ok, the minimal information to post in your own blog is done. In fact, Jekyll is far easier from building sites by using HTML or CSS. Thanks to Ruby and Gems, many facilities are already provided. They come from the <a href="https://en.wikipedia.org/wiki/Convention_over_configuration">CoC (Convention over Configuration)</a>.</p>
+
+<p>But all these things have a price: you must follow the conventions and obey the configuration. Small changes can cause big problems.</p>
+
+<p><img src="https://static.tvtropes.org/pmwiki/pub/images/drjekyllmrhyde_01.jpg" alt="Hyde" title="Dr Jekyll Hyde" /></p>
+
+<p>Of course, a complete course of Jekyll and its advanteges is the better way to learn and practice the use of this very powerfull (and simple) tool.</p>
+
+
+  </div>
+</article>
+
+<!-- -->
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://paulobmsousa.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- -->
+
+<a class="u-url" href="/github-blog/hello_jekyll/" hidden></a>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/github-blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">PauloBMSousa Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">PauloBMSousa Blog</li><li><a class="u-email" href="mailto:paulo.beniciol@gmail.com">paulo.beniciol@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/paulobmsousa"><svg class="svg-icon"><use xlink:href="/github-blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">paulobmsousa</span></a></li><li><a href="https://www.twitter.com/paulobmsousa"><svg class="svg-icon"><use xlink:href="/github-blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulobmsousa</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Personal Blog (incluing Family and Professional facts).</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
