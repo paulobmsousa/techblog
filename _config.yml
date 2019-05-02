@@ -17,7 +17,7 @@ title: PauloBMSousa Blog
 email: paulo.beniciol@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal Blog (incluing Family and Professional facts).
-baseurl: "/github-blog" # the subpath of your site, e.g. /blog
+baseurl: "/techblog" # the subpath of your site, e.g. /blog
 url: "https://paulobmsousa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: paulobmsousa
 github_username:  paulobmsousa
