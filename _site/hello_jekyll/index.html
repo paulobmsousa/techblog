@@ -44,7 +44,7 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Hello, Jekyll</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-04-30T09:38:58-04:00" itemprop="datePublished"><b>Apr 30, 2019</b> - <i>Estimated time: 14 minutes to read</i>
+      <time class="dt-published" datetime="2019-04-30T09:38:58-04:00" itemprop="datePublished"><b>Apr 30, 2019</b> - <i>Estimated time: 15 minutes to read</i>
       </time></p>
   </header>
 
@@ -398,6 +398,8 @@ comments: true</span></code></pre></figure>
 
 <p>Now, it is time to publish your site in a server. For simplicity, let us consider the <a href="https://about.gitlab.com/product/pages/">Github Pages</a>.</p>
 
+<h2 id="git-basics">Git Basics</h2>
+
 <p>Firstly, considering that you have already your account (otherwise, you must follow the procedure in order to open it). Now, let us create your own repository in order to publish after.</p>
 
 <ul>
@@ -447,14 +449,21 @@ git push -u origin master
     <p>Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: <code class="highlighter-rouge">git checkout -b [branchname]</code>. In this case, <em>branchname</em> can be, for instance, <strong>gh-pages</strong> (alusion to github pages);</p>
   </li>
   <li>
-    <p>Copy the entire content of the master to the new branch: <code class="highlighter-rouge">git push origin [branchname]</code>;</p>
-  </li>
-  <li>
-    <p>Now, you can check your Github Pages, according the default address: <strong>[git_username].github.io/[blogname]</strong></p>
+    <p>Copy the entire content of the master to the new branch: <code class="highlighter-rouge">git push origin [branchname]</code>.</p>
   </li>
 </ol>
 
 <p>Remember, whenever it is necessary, you must update your repository, by using <code class="highlighter-rouge">git commit -m [comment]</code>. And aditional files must be added before the commit, by using: <code class="highlighter-rouge">git add [filename]</code>.</p>
+
+<h2 id="github-pages-configuration">GitHub Pages Configuration</h2>
+
+<p>In order to have the GitHub Pages configuration, some additional steps are needed:</p>
+
+<p>A. Create a branch called <strong>gh-pages</strong> using <code class="highlighter-rouge">git checkout -b gh-pages</code>;</p>
+
+<p>B. Copy all the content to this new branch: <code class="highlighter-rouge">git push origin gh-pages</code>;</p>
+
+<p>Now, you can check your Github Pages, according the default address: <strong>[git_username].github.io/[blogname]</strong></p>
 
 <h1 id="dr-jekyll">Dr. Jekyll</h1>
 
