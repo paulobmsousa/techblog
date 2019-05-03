@@ -334,6 +334,8 @@ It can be done according the following steps:
 
 Now, it is time to publish your site in a server. For simplicity, let us consider the [Github Pages][gitlab-pages].
 
+## Git Basics
+
 Firstly, considering that you have already your account (otherwise, you must follow the procedure in order to open it). Now, let us create your own repository in order to publish after. 
 
 + **Tip**: When you create a **new repository**, Github will instruct you showing some commands like these:
@@ -374,11 +376,19 @@ Follow the steps:
 
 7. Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: `git checkout -b [branchname]`. In this case, *branchname* can be, for instance, **gh-pages** (alusion to github pages);
 
-8. Copy the entire content of the master to the new branch: `git push origin [branchname]`;
-
-9. Now, you can check your Github Pages, according the default address: **[git_username].github.io/[blogname]**
+8. Copy the entire content of the master to the new branch: `git push origin [branchname]`.
 
 Remember, whenever it is necessary, you must update your repository, by using `git commit -m [comment]`. And aditional files must be added before the commit, by using: `git add [filename]`.
+
+## GitHub Pages Configuration
+
+In order to have the GitHub Pages configuration, some additional steps are needed:
+
+A. Create a branch called **gh-pages** using `git checkout -b gh-pages`;
+
+B. Copy all the content to this new branch: `git push origin gh-pages`;
+
+Now, you can check your Github Pages, according the default address: **[git_username].github.io/[blogname]**
 
 # Dr. Jekyll
 
