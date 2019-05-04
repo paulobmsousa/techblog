@@ -6,7 +6,7 @@ categories: personal
 permalink: "/hello_jekyll/"
 ---
 
-![DevCorner](https://lh5.googleusercontent.com/aJY53XopBebmUuEV63oGi0PH0xyJDEuYleY7Oda4L4svsuhPUhzHxCFPu2QKiNmYFEghwsuyyxjU-cWJ_6EZFpnIxezH3HHbsSM7Oy6Oo7v7iQK3szld=w472)
+![DevCorner](https://raw.githubusercontent.com/paulobmsousa/paulobmsousa.github.io/master/images/devcorner1min.jpg)
 
 # Preview
 
