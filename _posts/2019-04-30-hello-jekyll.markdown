@@ -6,13 +6,13 @@ categories: personal
 permalink: "/hello_jekyll/"
 ---
 
-![DevCorner](https://lh5.googleusercontent.com/aJY53XopBebmUuEV63oGi0PH0xyJDEuYleY7Oda4L4svsuhPUhzHxCFPu2QKiNmYFEghwsuyyxjU-cWJ_6EZFpnIxezH3HHbsSM7Oy6Oo7v7iQK3szld=w472)
+![DevCorner][devblog1]
 
 # Preview
 
 ![Jekyll Logo][logo]
 
-In this first post, I have noted that it could be a good idea to summarize how to create **posts**, using [Jekyll][jekyll-home], that, in short, is one of the simplest and powerfull tool to create blogs.
+In this first post, I have noted that it could be a good idea to summarize how to create **posts**, using [Jekyll][jekyll-home], that, in short, is one of the simplest and powerful tool to create blogs.
 
 Firstly, some reasons to chose Jekyll:
 - The simplicity (in general, static generators that allows to use HTML and CSS);
@@ -43,7 +43,7 @@ Of course, sometimes following the above simple steps cannot work as expected.
 
    - Under Windows environment, the process for installing Ruby is better conducted by using [Ruby Installer][ruby-installer].  
    
-   - Aditionally, the Jekyll site has a step-by-step procedure to help Windows users: [Jekyll on Windows][win-users].  
+   - Additionally, the Jekyll site has a step-by-step procedure to help Windows users: [Jekyll on Windows][win-users].  
    
    - Note that, probably you are using the *minima* theme bundle, that can be replaced whenever you want. But it is ideal for most cases.  
 
@@ -71,9 +71,9 @@ Most are self intuitive, however, **baseurl**, **theme** and **markdown** are sp
 
    + **markdown**: The default markdown style. The option *"kramdown"* is the default for Jekyll;
 
-   + **theme**: The style (CSS behaviour) of your blog. The default (and very common used) is *"minima"*.
+   + **theme**: The style (CSS behavior) of your blog. The default (and very commonly used) is *"minima"*.
 
-   + **permalink**: The configuration of the URL shown in the Address bar. By default, it comes from a well defined structure: *"/:categories/:year/:month/:day/:title"*. If you prefer a simpler structure, you can adjust this item.
+   + **permalink**: The configuration of the URL shown in the Address bar. By default, it comes from a well-defined structure: *"/:categories/:year/:month/:day/:title"*. If you prefer a simpler structure, you can adjust this item.
 
 For instance, my blog has the following configuration:
 
@@ -95,7 +95,7 @@ comments: true
 
 # Posts: General Structure
 
-It is time to take some notes aboute the most important structure: how posts are organized.
+It is time to take some notes about the most important structure: how posts are organized.
 
 ## File structure
 
@@ -161,7 +161,7 @@ In fact, these folders and files are created:
 30/04/2019  14:52    <DIR>          _posts
 {% endhighlight %}
 
-As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use aditional configuration folders in the default theme (for instance, *minima*). They are located in a proper folder, set during the bundle installation.
+As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use additional configuration folders in the default theme (for instance, *minima*). They are in a proper folder, set during the bundle installation.
 
 You can use commands in order to identify *where* a specific bundle is installed in your computer: `bundle show minima`.  For instance, in my version, (2.5.0) the minima bundle contains: 
 
@@ -190,7 +190,7 @@ One of the main advantages of using Jekyll in order to create posts is the user-
 
 ## Home configuration
 
-Posts are shown according the descendent time order (most recent first). This pattern is conventional and you should respect this organization.
+Posts are shown according the descendent time order (most recent first). This pattern is conventional, and you should respect this organization.
 
 In order to get it, my **home.html** is set as shown below:
 
@@ -232,7 +232,7 @@ Note that there is a test (*if* clause) in order to see if there is more than on
 
 ## Posts configuration
 
-Each posts usually follow the **post.html** template. In my case, the text is organized as follows:
+Each post usually follows the **post.html** template. In my case, the text is organized as follows:
 
 {% highlight ruby %}
 {% raw %}
@@ -269,7 +269,7 @@ layout: default
 {% endraw %}
 {% endhighlight %}
 
-### Aditional configuration
+### Additional configuration
 
 Note that we are dealing with two configurations in this page that can be used in order to improve the quality of the posts and the feedback mechanism to the readers.
 
@@ -376,11 +376,11 @@ Follow the steps:
 
 6. Publish your posts: `git push -u origin master`.
 
-7. Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: `git checkout -b [branchname]`. In this case, *branchname* can be, for instance, **gh-pages** (alusion to github pages);
+7. Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: `git checkout -b [branchname]`. In this case, *branchname* can be, for instance, **gh-pages** (allusion to github pages);
 
 8. Copy the entire content of the master to the new branch: `git push origin [branchname]`.
 
-Remember, whenever it is necessary, you must update your repository, by using `git commit -m [comment]`. And aditional files must be added before the commit, by using: `git add [filename]`.
+Remember, whenever it is necessary, you must update your repository, by using `git commit -m [comment]`. And additional files must be added before the commit, by using: `git add [filename]`.
 
 ## GitHub Pages Configuration
 
@@ -400,7 +400,7 @@ But all these things have a price: you must follow the conventions and obey the 
 
 ![Hyde][jekyllhyde]
 
-Of course, a complete course of Jekyll and its advanteges is the better way to learn and practice the use of this very powerfull (and simple) tool.
+Of course, a complete course of Jekyll and its advantages is the better way to learn and practice the use of this very powerful (and simple) tool.
 
 [jekyll-home]: https://jekyllrb.com/
 [jekyll-site]: https://jekyllrb.com/docs/
@@ -417,3 +417,4 @@ Of course, a complete course of Jekyll and its advanteges is the better way to l
 
 [logo]: https://jekyllrb.com/img/logo-2x.png "Jekyll Logo"
 [jekyllhyde]: https://static.tvtropes.org/pmwiki/pub/images/drjekyllmrhyde_01.jpg "Dr Jekyll Hyde"
+[devblog1]: https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/devcorner1.png

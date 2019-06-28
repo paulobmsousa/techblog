@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Data Science Capstone | PauloBMSousa Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Data Science Capstone" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal Blog (incluing Family and Professional facts)." />
+<meta property="og:description" content="Personal Blog (incluing Family and Professional facts)." />
+<link rel="canonical" href="http://localhost:4000/techblog/datascience_capstone/" />
+<meta property="og:url" content="http://localhost:4000/techblog/datascience_capstone/" />
+<meta property="og:site_name" content="PauloBMSousa Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-27T09:38:58-04:00" />
+<script type="application/ld+json">
+{"headline":"Data Science Capstone","dateModified":"2019-06-27T09:38:58-04:00","datePublished":"2019-06-27T09:38:58-04:00","@type":"BlogPosting","url":"http://localhost:4000/techblog/datascience_capstone/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/techblog/datascience_capstone/"},"description":"Personal Blog (incluing Family and Professional facts).","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/techblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/techblog/feed.xml" title="PauloBMSousa Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/techblog/">PauloBMSousa Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/techblog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Data Science Capstone</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-06-27T09:38:58-04:00" itemprop="datePublished"><b>Jun 27, 2019</b> - <i>Estimated time: 31 minutes to read</i>
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/devcorner2.png" alt="DevCorner" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p><img src="https://images.youracclaim.com/images/60f2e1e1-1b74-4dc0-a24b-cd08b460c12d/Applied%2BData%2BScience%2BCapstone.png" alt="Jekyll Logo" title="Badge" /></p>
+
+<p>In this second post, I decided to reproduce the final project developed to the  <strong>IBM Data Science Professional Certification</strong>, using <a href="https://jupyter.org/">Jupyter</a>, that, in short, is one of the simplest and powerfull tool to create blogs.</p>
+
+<p>Firstly, one must consider the project that must be considered in the last challenge (also called “capestone”): it must contain:</p>
+
+<ul>
+  <li>
+    <p>The use of dataset, with <a href="https://pandas.pydata.org/">Pandas</a> funcions, specially assembled from different sources;</p>
+  </li>
+  <li>
+    <p><a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soap</a> application to extract information;</p>
+  </li>
+  <li>
+    <p><a href="https://foursquare.com/">Foursquare</a> for location service;</p>
+  </li>
+  <li>
+    <p>Finally, any kind of strategy to define a solution to a specific problem.</p>
+  </li>
+</ul>
+
+<h1 id="problem-definition">Problem definition</h1>
+
+<p><strong>CONTEXTUALIZATION</strong></p>
+
+<p>This case is based on a real case: One year ago, we decided to move to Canada. That time we needed to decide what city should be the better choice between two options: Toronto and Ottawa. Of course, several factors can be considered, including objective or subjetive ones. Science cannot deal with the last kind, but if we consider numerical values under the first aspect, maybe it is possible to have a diagnosis about the better choice.</p>
+
+<p>In this work, I am using DATA SCIENCE, in order to colaborate with the decision that, in fact, we have made before. This tool can reinforce that when we consider personal aspects (most related with family and quality of life), our final decision was in fact correct.</p>
+
+<p><strong>BACKGROUND</strong></p>
+
+<p>This problem is a very common situation when we consider the doubt related with the best destiny for immigrant families that need to consider different aspects. The first problem is related with the factors that must be considered in order to get the result to the original problem.</p>
+
+<p>In this situation, getting trusted and updated information is crucial. The second problem is that you need to have similar data from both options: having a detailed data of only one city is not fair and sometimes it is a challenge.</p>
+
+<h1 id="data-description">Data description</h1>
+
+<p><strong>DATA SOURCE</strong></p>
+
+<p><em>Source 1: FourSquare</em></p>
+
+<p>As mentioned, similar data must be obtained. In fact, using the information from the laboratories in this specialization, I have got details about one city (<strong>Toronto</strong>). It should be relatively easy to have similar information about the other destiny (<strong>Ottawa</strong>).</p>
+
+<p>In fact, only changing the information about the city, the libraries and services from <strong>Foursquare</strong> (https://api.foursquare.com/) were enough to get the complementary information about the Capital City, considering the main Venues obtained from the free service. It was the first criterion used in this comparison exercise.</p>
+
+<p><em>Source 2: Versus</em></p>
+
+<p>The second criterion was chosen by the information recorded at <strong>Versus</strong> (https://versus.com/en/ottawa-vs-toronto), when we have several indicators in order to compare both cities. However, in order to have a fair situation, both aspects: advantages from both cities were considered. In this situation, it was necessary to combine two tables in a single one, with permutation of some elements, in order to get a whole picture.</p>
+
+<p><strong>USE OF THE INFORMATION</strong></p>
+
+<p>If I just used the information without any particular criteria, I just have an equilibrium of the both cities. It looks like correct, but, in fact, it is not and the reason is because for this specific situation, some indicators are more relevant than others.</p>
+
+<p>For instance, does not matter that both cities can have 100 venues in a specific perimeter: what is relevant is what of these places are considered relevant to my situation (family). At the same way, it is unfair that the 16 indicators collected in the Versus page are considered with the same weight: some of them are more important than others.</p>
+
+<p>Only after this kind of preparation of the data, is that I could perform the analysis.</p>
+
+<p><strong>DATA DESCRIPTION</strong></p>
+
+<p><em>Source 1: FourSquare</em></p>
+
+<p>After request the service for Venues (https://api.foursquare.com/v2/venues/explore), it is peformed a filter in order to use only the following information:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Venue name;
+- Venue category;
+- Venue location (latitude / longitude).
+</code></pre></div></div>
+
+<p>The category was specially important because it is used to mark some venues as important (“top”) or not. It is also shown in the map of both cities.</p>
+
+<p><em>Source 2: Versus</em></p>
+
+<p>From this page, I used all the 16 initial indicators:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Population density;
+- Monthly public transport ticket;
+- Unemployment rate;
+- Cost of one-bedroom ap. in the center;
+- Younger population;
+- Income inequalities;
+- Landmarks from UNESCO World Heritage list;
+- Average minimum temperature;
+- Higher average maximum temperature;
+- Higher average temperature;
+- Million inhabitants;
+- Billion higher gross domestic product (GDP);
+- Higher average salary;
+- 2 more big sport facilities;
+- Cost of one single transportation ticket;
+- Billionaires from annual Forbes.
+</code></pre></div></div>
+
+<p>However, as mentioned above, only some of them were considered really important to our final decision.</p>
+
+<h1 id="methodology-solution">Methodology (Solution)</h1>
+
+<h2 id="general-view">General view</h2>
+
+<p>The methodology can be resumed in the following steps:</p>
+
+<ol>
+  <li>
+    <p>General preparation: When libraries, importation and functions are defined;</p>
+  </li>
+  <li>
+    <p>Data gathering and analysis: Using Foursquare and Versus information;</p>
+  </li>
+  <li>
+    <p>Conclusion: Combining the results in order to decide the best city.</p>
+  </li>
+</ol>
+
+<p>Some aditional notes (detailed in the Solution description below):</p>
+
+<p>A. It is important to see that the information had to be prepared and combined from the Versus data;</p>
+
+<p>B. Method to extract numerical information from Versus was also implemented, in order to adjust the output of BeautifulSoup</p>
+
+<h2 id="step-by-step-solution">Step-by-step solution</h2>
+
+<h3 id="step-1-general-preparation">Step 1: General Preparation</h3>
+
+<h4 id="step_11-the-first-step-is-to-install-packages-specially-related-to-pandas-dataframes-and-geolocalization">Step_1.1: The first step is to install packages, specially related to pandas (dataframes) and geolocalization</h4>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="s">'''
+# Uncomment to perform package installations
+! pip install pandas
+! pip install geopy
+! pip install folium
+'''</span></code></pre></figure>
+
+<h4 id="step_12-the-importation-of-the-packages-that-will-be-used-in-this-lab">Step_1.2: The importation of the packages that will be used in this lab.</h4>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># General frame libraries
+</span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="c1"># Soup libraries
+</span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">from</span> <span class="nn">pandas.compat</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">import</span> <span class="nn">json</span> <span class="c1"># library to handle JSON files
+</span><span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># library to handle requests
+</span><span class="kn">from</span> <span class="nn">pandas.io.json</span> <span class="kn">import</span> <span class="n">json_normalize</span> <span class="c1"># tranform JSON file into a pandas dataframe
+# Maps library
+</span><span class="kn">import</span> <span class="nn">folium</span>
+<span class="kn">from</span> <span class="nn">geopy.geocoders</span> <span class="kn">import</span> <span class="n">Nominatim</span> <span class="c1"># module to convert an address into latitude and longitude values
+</span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span> 
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span> 
+<span class="c1"># Plot library
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span></code></pre></figure>
+
+<h4 id="step_13-general-configuration-that-will-be-used-by-functions">Step_1.3: General configuration (that will be used by functions).</h4>
+
+<p>Pandas and Matplot configuration:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Pandas configuration
+</span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">'display.max_columns'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">'display.max_rows'</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="c1"># Matplot inline
+</span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span></code></pre></figure>
+
+<p>Foursquare personal credentials (should be hiden for security):</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Define Foursquare Credentials and Versions
+</span><span class="n">CLIENT_ID</span> <span class="o">=</span> <span class="s">''</span> <span class="c1"># your Foursquare ID
+</span><span class="n">CLIENT_SECRET</span> <span class="o">=</span> <span class="s">''</span> <span class="c1"># your Foursquare Secret
+</span><span class="n">VERSION</span> <span class="o">=</span> <span class="s">'20181102'</span> <span class="c1"># Foursquare API version</span></code></pre></figure>
+
+<p>Parameters to get Venues from Foursquare API:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Plot definition
+</span><span class="n">LIMIT</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="mi">10000</span> <span class="c1">#500 (Changed in order to get more venues from each city)
+</span><span class="n">geolocator</span> <span class="o">=</span> <span class="n">Nominatim</span><span class="p">(</span><span class="n">user_agent</span><span class="o">=</span><span class="s">"TO_explorer"</span><span class="p">)</span></code></pre></figure>
+
+<h4 id="step_14-in-this-part-all-funcions-are-defined">Step_1.4: In this part, all funcions are defined</h4>
+
+<p>Categories of Venue from Foursquere list response:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># function that extracts the category of the venue
+</span><span class="k">def</span> <span class="nf">get_category_type</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">categories_list</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">'categories'</span><span class="p">]</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">categories_list</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">'venue.categories'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categories_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">None</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">categories_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s">'name'</span><span class="p">]</span></code></pre></figure>
+
+<p>Method to get <em>venues</em> according a nearby location (in both cases, downtown of the cities):</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Function definition
+</span><span class="k">def</span> <span class="nf">getNearbyVenues</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">latitudes</span><span class="p">,</span> <span class="n">longitudes</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
+    <span class="n">venues_list</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">latitudes</span><span class="p">,</span> <span class="n">longitudes</span><span class="p">):</span>
+        <span class="c1">##print(name)
+</span>        <span class="c1"># create the API request URL
+</span>        <span class="n">url</span> <span class="o">=</span> <span class="s">'https://api.foursquare.com/v2/venues/explore?client_id={}&amp;client_secret={}&amp;ll={},{}&amp;v={}&amp;radius={}&amp;limit={}'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span>
+                <span class="n">CLIENT_ID</span><span class="p">,</span> <span class="n">CLIENT_SECRET</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">,</span> <span class="n">VERSION</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">LIMIT</span><span class="p">)</span>
+        <span class="c1"># make the GET request
+</span>        <span class="n">results</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s">"response"</span><span class="p">][</span><span class="s">'groups'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'items'</span><span class="p">]</span>
+        <span class="c1"># return only relevant information for each nearby venue
+</span>        <span class="n">venues_list</span><span class="o">.</span><span class="n">append</span><span class="p">([(</span><span class="n">name</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="s">'venue'</span><span class="p">][</span><span class="s">'name'</span><span class="p">],</span> 
+            <span class="n">v</span><span class="p">[</span><span class="s">'venue'</span><span class="p">][</span><span class="s">'location'</span><span class="p">][</span><span class="s">'lat'</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="s">'venue'</span><span class="p">][</span><span class="s">'location'</span><span class="p">][</span><span class="s">'lng'</span><span class="p">],</span> 
+            <span class="n">v</span><span class="p">[</span><span class="s">'venue'</span><span class="p">][</span><span class="s">'categories'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'name'</span><span class="p">])</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span><span class="p">])</span>
+    <span class="n">nearby_venues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">item</span> <span class="k">for</span> <span class="n">venue_list</span> <span class="ow">in</span> 
+                    <span class="n">venues_list</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">venue_list</span><span class="p">])</span>
+    <span class="n">nearby_venues</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Neighbourhood'</span><span class="p">,</span> <span class="s">'Neighbourhood Latitude'</span><span class="p">,</span> 
+            <span class="s">'Neighbourhood Longitude'</span><span class="p">,</span> <span class="s">'Venue'</span><span class="p">,</span> <span class="s">'Venue Latitude'</span><span class="p">,</span> 
+            <span class="s">'Venue Longitude'</span><span class="p">,</span> <span class="s">'Venue Category'</span><span class="p">]</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">nearby_venues</span><span class="p">)</span></code></pre></figure>
+
+<p>List of common venues from a location:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Function to Most Common Vanues
+</span><span class="k">def</span> <span class="nf">return_most_common_venues</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">num_top_venues</span><span class="p">):</span>
+    <span class="n">row_categories</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">row_categories_sorted</span> <span class="o">=</span> <span class="n">row_categories</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">row_categories_sorted</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">num_top_venues</span></code></pre></figure>
+
+<p>Method to get venues from Foursquare API. The result is a new dataframe:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Function to return venues from a location
+</span><span class="k">def</span> <span class="nf">retVenues</span><span class="p">(</span><span class="n">results</span><span class="p">):</span>
+    <span class="n">venues</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'groups'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'items'</span><span class="p">]</span>
+    <span class="n">nearby_venues</span> <span class="o">=</span> <span class="n">json_normalize</span><span class="p">(</span><span class="n">venues</span><span class="p">)</span> <span class="c1"># flatten JSON
+</span>    <span class="c1"># filter columns
+</span>    <span class="n">filtered_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'venue.name'</span><span class="p">,</span> <span class="s">'venue.categories'</span><span class="p">,</span> <span class="s">'venue.location.lat'</span><span class="p">,</span> 
+      <span class="s">'venue.location.lng'</span><span class="p">]</span>
+    <span class="n">nearby_venues</span> <span class="o">=</span> <span class="n">nearby_venues</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">filtered_columns</span><span class="p">]</span>
+    <span class="c1"># filter the category for each row
+</span>    <span class="n">nearby_venues</span><span class="p">[</span><span class="s">'venue.categories'</span><span class="p">]</span> <span class="o">=</span> <span class="n">nearby_venues</span><span class="o">.</span><span class="nb">apply</span>
+                                <span class="p">(</span><span class="n">get_category_type</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># clean columns
+</span>    <span class="n">nearby_venues</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> 
+                                <span class="n">nearby_venues</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">nearby_venues</span></code></pre></figure>
+
+<p>Code to extract numerical information from strings. It will be used in the comparison:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Function to extract numbers from strings (used in comparison)
+</span><span class="k">def</span> <span class="nf">retListNum</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">newstr</span> <span class="o">=</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">ch</span> <span class="k">if</span> <span class="n">ch</span> <span class="ow">in</span> <span class="s">'0123456789.'</span> <span class="k">else</span> <span class="s">' '</span><span class="p">)</span> <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+    <span class="n">listOfNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">newstr</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+    <span class="k">return</span> <span class="n">listOfNumbers</span></code></pre></figure>
+
+<p>Definition of better categories of venues to be used in the comparison from Foursquare (1st criterion):</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Venues categories top list (used to first analysis)
+</span><span class="n">topList</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Park'</span><span class="p">,</span> <span class="s">'Museum'</span><span class="p">,</span> <span class="s">'Supermarket'</span><span class="p">,</span> <span class="s">'Bookstore'</span><span class="p">,</span> <span class="s">'Gym'</span><span class="p">,</span> 
+    <span class="s">'Department Store'</span><span class="p">,</span> <span class="s">'Pharmacy'</span><span class="p">,</span> <span class="s">'Shopping Mall'</span><span class="p">,</span> <span class="s">'Pool'</span><span class="p">,</span> 
+    <span class="s">'Historic Site'</span><span class="p">,</span> <span class="s">'Monument / Landmark'</span><span class="p">]</span></code></pre></figure>
+
+<p>Definition of better indicators that will be considering in the Versus comparion (2nd criterion):</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Best indicators to comparison
+</span><span class="n">personalCriteria</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span></code></pre></figure>
+
+<h3 id="step-2-data-exploration">Step 2: Data Exploration</h3>
+
+<p><strong>Criterion A: Foursquare Service</strong></p>
+
+<h4 id="step_21-toronto-city">Step_2.1: Toronto City</h4>
+
+<h5 id="step_211-toronto-venues"><strong>Step_2.1.1: Toronto Venues</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Toronto data
+</span><span class="n">addressToronto</span> <span class="o">=</span> <span class="s">'Toronto, Ontario, Canada'</span>
+<span class="n">locationToronto</span> <span class="o">=</span> <span class="n">geolocator</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">addressToronto</span><span class="p">)</span>
+<span class="n">latitudeToronto</span> <span class="o">=</span> <span class="n">locationToronto</span><span class="o">.</span><span class="n">latitude</span>
+<span class="n">longitudeToronto</span> <span class="o">=</span> <span class="n">locationToronto</span><span class="o">.</span><span class="n">longitude</span>
+<span class="c1"># Geo service for Toronto
+</span><span class="n">urlToronto</span> <span class="o">=</span> <span class="s">'https://api.foursquare.com/v2/venues/explore?client_id={}&amp;client_secret={}&amp;ll={},{}&amp;v={}&amp;radius={}&amp;limit={}'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span>
+    <span class="n">CLIENT_ID</span><span class="p">,</span> <span class="n">CLIENT_SECRET</span><span class="p">,</span> <span class="n">latitudeToronto</span><span class="p">,</span> <span class="n">longitudeToronto</span><span class="p">,</span> <span class="n">VERSION</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">LIMIT</span><span class="p">)</span>
+<span class="n">resultsToronto</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">urlToronto</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">venuesToronto</span> <span class="o">=</span> <span class="n">retVenues</span><span class="p">(</span><span class="n">resultsToronto</span><span class="p">)</span>
+<span class="n">venuesToronto</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Lat</th>
+      <th>Lng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Downtown Toronto</td>
+      <td>Neighborhood</td>
+      <td>43.653232</td>
+      <td>-79.385296</td>
+    </tr>
+    <tr>
+      <td>Art Gallery of Ontario</td>
+      <td>Art Gallery</td>
+      <td>43.654003</td>
+      <td>-79.392922</td>
+    </tr>
+    <tr>
+      <td>Pai</td>
+      <td>Thai Restaurant</td>
+      <td>43.647923</td>
+      <td>-79.388579</td>
+    </tr>
+    <tr>
+      <td>Byblos Toronto</td>
+      <td>Mediterranean Restaurant</td>
+      <td>43.647615</td>
+      <td>-79.388381</td>
+    </tr>
+    <tr>
+      <td>Nathan Phillips Square</td>
+      <td>Plaza</td>
+      <td>43.652270</td>
+      <td>-79.383516</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>General information about the Venues from Toronto:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># General information
+</span><span class="n">numVenuesToronto</span> <span class="o">=</span> <span class="n">venuesToronto</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Toronto has {} venues returned by Foursquare.'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">numVenuesToronto</span><span class="p">))</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong> Toronto has 100 venues returned by Foursquare.</li>
+</ul>
+
+<p>List of the categories of Venues:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># List of unique values
+</span><span class="n">categoriesToronto</span> <span class="o">=</span> <span class="n">venuesToronto</span><span class="p">[</span><span class="s">'categories'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">numcategoriesToronto</span> <span class="o">=</span> <span class="n">categoriesToronto</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">'Number of categories of this city (Toronto):'</span><span class="p">,</span><span class="n">numcategoriesToronto</span><span class="p">)</span>
+<span class="n">categoriesToronto</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p>Number of categories of this city (Toronto): 60
+array([‘Neighborhood’, ‘Art Gallery’, ‘Thai Restaurant’,
+       ‘Mediterranean Restaurant’, ‘Plaza’, ‘Concert Hall’,
+       ‘American Restaurant’, ‘Clothing Store’, ‘Sandwich Place’,
+       ‘Speakeasy’, ‘Coffee Shop’, ‘Record Shop’, ‘Theater’,
+       ‘Sporting Goods Shop’, ‘Cosmetics Shop’,
+       ‘Vegetarian / Vegan Restaurant’, ‘French Restaurant’,
+       ‘Pizza Place’, ‘Movie Theater’, ‘Café’, ‘Gym’, ‘Dessert Shop’,
+       ‘Mexican Restaurant’, ‘Restaurant’, ‘Comedy Club’, ‘Hotel’,
+       ‘Arts &amp; Crafts Store’, ‘Train Station’, ‘Scenic Lookout’,
+       ‘Brewery’, ‘Shoe Store’, ‘Organic Grocery’, ‘Hostel’, ‘Diner’,
+       ‘Farmers Market’, ‘Spa’, ‘Seafood Restaurant’,
+       ‘Japanese Restaurant’, ‘Food Truck’, ‘Park’, ‘Dance Studio’,
+       ‘Monument / Landmark’, ‘Museum’, ‘Supermarket’, ‘Salad Place’,
+       ‘Middle Eastern Restaurant’, ‘Spanish Restaurant’,
+       ‘Italian Restaurant’, ‘Steakhouse’, ‘Aquarium’, ‘Baseball Stadium’,
+       ‘Bar’, ‘Ramen Restaurant’, ‘Theme Restaurant’, ‘Bakery’,
+       ‘Performing Arts Venue’, ‘Tapas Restaurant’, ‘Yoga Studio’, ‘Lake’,
+       ‘Butcher’], dtype=object)</p>
+
+<h5 id="step212-plotting-toronto-with-venues"><strong>Step2.1.2: Plotting Toronto with Venues</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Plotting data
+</span><span class="n">strcoordToronto</span> <span class="o">=</span> <span class="s">'Toronto: {}, {}.'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">latitudeToronto</span><span class="p">,</span> <span class="n">longitudeToronto</span><span class="p">)</span>
+<span class="n">map_toronto</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span> <span class="o">=</span> <span class="p">[</span><span class="n">latitudeToronto</span><span class="p">,</span> <span class="n">longitudeToronto</span><span class="p">],</span> <span class="n">zoom_start</span> <span class="o">=</span> <span class="mi">13</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">latitudeToronto</span><span class="p">,</span> <span class="n">longitudeToronto</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">popup</span> <span class="o">=</span> <span class="n">strcoordToronto</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'red'</span><span class="p">,</span> 
+                    <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span> <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_toronto</span><span class="p">)</span>
+<span class="n">bestPlacesToronto</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numVenuesToronto</span><span class="p">):</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">venuesToronto</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">lng</span> <span class="o">=</span> <span class="n">venuesToronto</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">venuesToronto</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">":</span><span class="se">\n</span><span class="s">"</span> <span class="o">+</span> <span class="n">venuesToronto</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c1"># Venues in the top category are ploted in blue; otherwise, black
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">venuesToronto</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">topList</span><span class="p">):</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">popup</span> <span class="o">=</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'blue'</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span> 
+                        <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_toronto</span><span class="p">)</span>
+        <span class="n">bestPlacesToronto</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">popup</span> <span class="o">=</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'green'</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span> 
+                        <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_toronto</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Number of best places:'</span><span class="p">,</span><span class="n">bestPlacesToronto</span><span class="p">)</span>
+<span class="n">map_toronto</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/venuestor.png" alt="Venues Toronto" /></p>
+
+<h4 id="step_22-ottawa-city">Step_2.2: Ottawa City</h4>
+
+<h5 id="step_221-ottawa-venues"><strong>Step_2.2.1: Ottawa Venues</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Testing data
+</span><span class="n">addressOttawa</span> <span class="o">=</span> <span class="s">'Ottawa, Ontario, Canada'</span>
+<span class="n">locationOttawa</span> <span class="o">=</span> <span class="n">geolocator</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">addressOttawa</span><span class="p">)</span>
+<span class="n">latitudeOttawa</span> <span class="o">=</span> <span class="n">locationOttawa</span><span class="o">.</span><span class="n">latitude</span>
+<span class="n">longitudeOttawa</span> <span class="o">=</span> <span class="n">locationOttawa</span><span class="o">.</span><span class="n">longitude</span>
+<span class="c1"># Geo service for Toronto
+</span><span class="n">urlOttawa</span> <span class="o">=</span> <span class="s">'https://api.foursquare.com/v2/venues/explore?client_id={}&amp;client_secret={}&amp;ll={},{}&amp;v={}&amp;radius={}&amp;limit={}'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span>
+    <span class="n">CLIENT_ID</span><span class="p">,</span> <span class="n">CLIENT_SECRET</span><span class="p">,</span> <span class="n">latitudeOttawa</span><span class="p">,</span> <span class="n">longitudeOttawa</span><span class="p">,</span> <span class="n">VERSION</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">LIMIT</span><span class="p">)</span>
+<span class="n">resultsOttawa</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">urlOttawa</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">venuesOttawa</span> <span class="o">=</span> <span class="n">retVenues</span><span class="p">(</span><span class="n">resultsOttawa</span><span class="p">)</span>
+<span class="n">venuesOttawa</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Lat</th>
+      <th>Lng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Confederation Park</td>
+      <td>Park</td>
+      <td>45.422069</td>
+      <td>-75.692518</td>
+    </tr>
+    <tr>
+      <td>National Arts Centre - Centre National des Arts</td>
+      <td>Concert Hall</td>
+      <td>45.422922</td>
+      <td>-75.692996</td>
+    </tr>
+    <tr>
+      <td>La Bottega</td>
+      <td>Deli / Bodega</td>
+      <td>45.426894</td>
+      <td>-75.691906</td>
+    </tr>
+    <tr>
+      <td>Major’s Hill Park</td>
+      <td>Park</td>
+      <td>45.427040</td>
+      <td>-75.696863</td>
+    </tr>
+    <tr>
+      <td>Rideau Canal</td>
+      <td>Other Great Outdoors</td>
+      <td>45.424781</td>
+      <td>-75.695129</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>General information about the Venues from Ottawa:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># General information
+</span><span class="n">numVenuesOttawa</span> <span class="o">=</span> <span class="n">venuesOttawa</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Ottawa has {} venues returned by Foursquare.'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">numVenuesOttawa</span><span class="p">))</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong>: Ottawa has 100 venues returned by Foursquare.</li>
+</ul>
+
+<p>List of Ottawa categories of venues:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># List of venues
+</span><span class="n">categoriesOttawa</span> <span class="o">=</span> <span class="n">venuesOttawa</span><span class="p">[</span><span class="s">'categories'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">numcategoriesOttawa</span> <span class="o">=</span> <span class="n">categoriesOttawa</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="k">print</span><span class="p">(</span><span class="s">'Number of categories of this city (Ottawa):'</span><span class="p">,</span><span class="n">numcategoriesOttawa</span><span class="p">)</span>
+<span class="n">categoriesOttawa</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p>Number of categories of this city (Ottawa): 58
+array([‘Park’, ‘Concert Hall’, ‘Deli / Bodega’, ‘Other Great Outdoors’,
+       ‘Hotel’, ‘Restaurant’, ‘Noodle House’, ‘Fast Food Restaurant’,
+       ‘Memorial Site’, ‘Vegetarian / Vegan Restaurant’,
+       ‘New American Restaurant’, ‘Bakery’, ‘Ice Cream Shop’,
+       ‘Mexican Restaurant’, ‘Art Gallery’, ‘Japanese Restaurant’,
+       ‘Taco Place’, ‘Coffee Shop’, ‘Italian Restaurant’,
+       ‘Seafood Restaurant’, ‘Pub’, ‘Market’, ‘Salad Place’,
+       ‘Skating Rink’, ‘Café’, ‘Burger Joint’,
+       ‘Southern / Soul Food Restaurant’, ‘Tapas Restaurant’,
+       ‘Indie Movie Theater’, ‘Breakfast Spot’, ‘Grocery Store’,
+       ‘Korean Restaurant’, ‘Cupcake Shop’, ‘Steakhouse’, ‘Yoga Studio’,
+       ‘Bookstore’, ‘Middle Eastern Restaurant’, ‘Bar’, ‘Pizza Place’,
+       ‘Museum’, ‘Historic Site’, ‘German Restaurant’,
+       ‘Monument / Landmark’, ‘French Restaurant’, ‘History Museum’,
+       ‘BBQ Joint’, ‘Plaza’, ‘Record Shop’, ‘Bagel Shop’, ‘Gastropub’,
+       ‘Movie Theater’, ‘Football Stadium’, ‘Brewery’, ‘Fish Market’,
+       ‘Theme Restaurant’, ‘Wine Bar’, ‘Diner’, ‘Sandwich Place’],
+      dtype=object)</p>
+
+<h5 id="step222-plotting-ottawa-with-venues"><strong>Step2.2.2: Plotting Ottawa with Venues</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Plotting data
+</span><span class="n">strcoordOttawa</span> <span class="o">=</span> <span class="s">'Ottawa: {}, {}.'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">latitudeOttawa</span><span class="p">,</span> <span class="n">longitudeOttawa</span><span class="p">)</span>
+<span class="n">map_ottawa</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span> <span class="o">=</span> <span class="p">[</span><span class="n">latitudeOttawa</span><span class="p">,</span> <span class="n">longitudeOttawa</span><span class="p">],</span> <span class="n">zoom_start</span> <span class="o">=</span> <span class="mi">13</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">latitudeOttawa</span><span class="p">,</span> <span class="n">longitudeOttawa</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> 
+                    <span class="n">popup</span> <span class="o">=</span> <span class="n">strcoordOttawa</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'red'</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span>
+                    <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_ottawa</span><span class="p">)</span>
+<span class="n">bestPlacesOttawa</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numVenuesOttawa</span><span class="p">):</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">venuesOttawa</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">lng</span> <span class="o">=</span> <span class="n">venuesOttawa</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">venuesOttawa</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">":</span><span class="se">\n</span><span class="s">"</span> <span class="o">+</span> <span class="n">venuesOttawa</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c1"># Venues in the top category are ploted in blue; otherwise, black
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">venuesOttawa</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">topList</span><span class="p">):</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">popup</span> <span class="o">=</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'blue'</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> 
+                            <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span> <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span>
+                            <span class="n">add_to</span><span class="p">(</span><span class="n">map_ottawa</span><span class="p">)</span>
+        <span class="n">bestPlacesOttawa</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">],</span> <span class="n">radius</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">popup</span> <span class="o">=</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">'green'</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> 
+                            <span class="n">fill_color</span> <span class="o">=</span> <span class="s">'white'</span><span class="p">,</span> <span class="n">fill_opacity</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">parse_html</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span><span class="o">.</span>
+                            <span class="n">add_to</span><span class="p">(</span><span class="n">map_ottawa</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Number of best places:'</span><span class="p">,</span><span class="n">bestPlacesOttawa</span><span class="p">)</span>
+<span class="n">map_ottawa</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/venuesott.png" alt="Venues Ottawa" /></p>
+
+<p><strong>Criterion B: Versus Comparison</strong></p>
+
+<h4 id="step_23-the-second-criterium-is-based-on-the-versus-city-comparison">Step_2.3: The second criterium is based on the Versus City comparison.</h4>
+
+<h5 id="step_231-reading-information-from-versus-site"><strong>Step_2.3.1: Reading information from Versus Site.</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Reading source - Versus
+</span><span class="n">urlAdd</span> <span class="o">=</span> <span class="s">'https://versus.com/en/ottawa-vs-toronto'</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">urlAdd</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+<span class="n">listtab</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'div'</span><span class="p">,{</span><span class="s">'class'</span><span class="p">:</span><span class="s">'tldr'</span><span class="p">}):</span>
+    <span class="n">strtab</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">row1</span> <span class="o">=</span> <span class="s">';'</span><span class="p">;</span>
+    <span class="k">for</span> <span class="n">em</span> <span class="ow">in</span> <span class="n">table</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'em'</span><span class="p">,{</span><span class="s">'class'</span><span class="p">:</span><span class="s">'value'</span><span class="p">}):</span>
+        <span class="n">row1</span> <span class="o">=</span> <span class="n">row1</span><span class="o">+</span><span class="s">','</span><span class="o">+</span><span class="n">em</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">strtab</span> <span class="o">=</span> <span class="n">strtab</span> <span class="o">+</span> <span class="n">row1</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span>
+    <span class="n">row2</span><span class="o">=</span><span class="s">';'</span><span class="p">;</span>
+    <span class="k">for</span> <span class="n">em</span> <span class="ow">in</span> <span class="n">table</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'em'</span><span class="p">,{</span><span class="s">'class'</span><span class="p">:</span><span class="s">'otherValue'</span><span class="p">}):</span>
+        <span class="n">row2</span> <span class="o">=</span> <span class="n">row2</span><span class="o">+</span><span class="s">','</span><span class="o">+</span><span class="n">em</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">strtab</span> <span class="o">=</span> <span class="n">strtab</span> <span class="o">+</span> <span class="n">row2</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span>
+    <span class="n">listtab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">strtab</span><span class="p">)</span>
+<span class="c1"># Creating head for the future tables
+</span><span class="n">head0</span><span class="o">=</span><span class="s">'PopDensity,MonthlyPubTrans,UnemploymentRate,CostOneBedroom,YoungPop,</span><span class="err">
+</span><span class="s">        IncomeIneq,Heritage,AvgMinTemp</span><span class="se">\n</span><span class="s">'</span>
+<span class="n">head1</span><span class="o">=</span><span class="s">'AvgMaxTemp,HighAvgTemp,MilInhabitants,BilDGP,HighAvgSal,SportsFacility,</span><span class="err">
+</span><span class="s">        CostSingTrans,ForbesBil</span><span class="se">\n</span><span class="s">'</span>
+<span class="c1"># Creating lists to tables
+</span><span class="n">strnew</span> <span class="o">=</span> <span class="n">listtab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">strnew</span> <span class="o">=</span> <span class="n">listtab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">';,'</span><span class="p">,</span><span class="n">head0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">strnew</span> <span class="o">=</span> <span class="n">strnew</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">';,'</span><span class="p">,</span><span class="s">''</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">listtab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">strnew</span>
+<span class="n">strnew</span> <span class="o">=</span> <span class="n">listtab</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">strnew</span> <span class="o">=</span> <span class="n">listtab</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">';,'</span><span class="p">,</span><span class="n">head1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">strnew</span> <span class="o">=</span> <span class="n">strnew</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">';,'</span><span class="p">,</span><span class="s">''</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">listtab</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">strnew</span></code></pre></figure>
+
+<h5 id="step_232-crating-tables-to-dataframe"><strong>Step_2.3.2: Crating tables to dataframe</strong></h5>
+
+<p>Cities names:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Table with City Names
+</span><span class="n">strcity</span> <span class="o">=</span> <span class="s">'City</span><span class="se">\n</span><span class="s">Ottawa</span><span class="se">\n</span><span class="s">Toronto'</span>
+<span class="n">CompTabCity</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">strcity</span><span class="p">))</span>
+<span class="n">CompTabCity</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ottawa</td>
+    </tr>
+    <tr>
+      <td>Toronto</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ottawa advantages list:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Table 0: Advantages of Ottawa
+</span><span class="n">CompTab0</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">listtab</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">CompTab0</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>PopDensity</th>
+      <th>MonthlyPubTrans</th>
+      <th>UnemploymentRate</th>
+      <th>CostOneBedroom</th>
+      <th>YoungPop</th>
+      <th>IncomeIneq</th>
+      <th>Heritage</th>
+      <th>AvgMinTem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1680 people/km²</td>
+      <td>81.26$</td>
+      <td>6.3%</td>
+      <td>902.6$</td>
+      <td>36.7 years</td>
+      <td>0.440</td>
+      <td>1</td>
+      <td>1.5°C</td>
+    </tr>
+    <tr>
+      <td>4150 people/km²</td>
+      <td>105.01$</td>
+      <td>9.9%</td>
+      <td>1199.1$</td>
+      <td>36.9 years</td>
+      <td>0.441</td>
+      <td>0</td>
+      <td>6.2°C</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Toronto advantages list:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Table 1: Advantages of Toronto
+</span><span class="n">CompTab1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">listtab</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">CompTab1</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>AvgMaxTemp</th>
+      <th>HighAvgTemp</th>
+      <th>MilInhabitants</th>
+      <th>BilDGP</th>
+      <th>HighAvgSal</th>
+      <th>SportsFacility</th>
+      <th>CostSingTrans</th>
+      <th>ForbesBil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11.9°C</td>
+      <td>9.1°C</td>
+      <td>2.62 million</td>
+      <td>270$ billion</td>
+      <td>2574.92$</td>
+      <td>3</td>
+      <td>2.41$</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10.9°C</td>
+      <td>6.2°C</td>
+      <td>0.88 million</td>
+      <td>40$ billion</td>
+      <td>2441.68$</td>
+      <td>1</td>
+      <td>2.62$</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Adjusting Table 1 to maintain the same order (Ottawa x Toronto):</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Temporary table - Reordering the raws in the Toronto advantages
+</span><span class="n">CompTab2</span> <span class="o">=</span> <span class="n">CompTab1</span>
+<span class="n">line0</span><span class="p">,</span> <span class="n">line1</span> <span class="o">=</span> <span class="n">CompTab2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">CompTab2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">CompTab2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">CompTab2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">line1</span><span class="p">,</span> <span class="n">line0</span>
+<span class="n">CompTab2</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>AvgMaxTemp</th>
+      <th>HighAvgTemp</th>
+      <th>MilInhabitants</th>
+      <th>BilDGP</th>
+      <th>HighAvgSal</th>
+      <th>SportsFacility</th>
+      <th>CostSingTrans</th>
+      <th>ForbesBil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.9°C</td>
+      <td>6.2°C</td>
+      <td>0.88 million</td>
+      <td>40$ billion</td>
+      <td>2441.68$</td>
+      <td>1</td>
+      <td>2.62$</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11.9°C</td>
+      <td>9.1°C</td>
+      <td>2.62 million</td>
+      <td>270$ billion</td>
+      <td>2574.92$</td>
+      <td>3</td>
+      <td>2.41$</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Merging tables in one final dataset:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># New table marging all previous tables
+</span><span class="n">frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">CompTabCity</span><span class="p">,</span> <span class="n">CompTab0</span><span class="p">,</span> <span class="n">CompTab2</span><span class="p">]</span>
+<span class="n">CompTab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">frames</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span></code></pre></figure>
+
+<h5 id="step_233-getting-advantages-of-the-cities"><strong>Step_2.3.3: Getting advantages of the cities</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Preparation of lists of indicators
+</span><span class="n">tam</span> <span class="o">=</span> <span class="n">CompTab</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">listNum</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tam</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">s1</span> <span class="o">=</span> <span class="n">CompTab</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">s2</span> <span class="o">=</span> <span class="n">CompTab</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="s">' '</span> <span class="o">+</span> <span class="n">s2</span>
+    <span class="k">except</span><span class="p">:</span>        
+        <span class="n">f1</span> <span class="o">=</span> <span class="n">CompTab</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+        <span class="n">s1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
+        <span class="n">f2</span> <span class="o">=</span> <span class="n">CompTab</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+        <span class="n">s2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="s">' '</span> <span class="o">+</span> <span class="n">s2</span>        
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">newlist</span> <span class="o">=</span> <span class="n">retListNum</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">listNum</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newlist</span><span class="p">)</span></code></pre></figure>
+
+<h5 id="step_234-computing-the-general-indicators"><strong>Step_2.3.4: Computing the general indicators</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Comparison, considering MIN and MAX values
+</span><span class="n">MIN</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">MAX</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">listCriteria</span> <span class="o">=</span> <span class="p">[</span><span class="n">MIN</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span>
+                <span class="n">MAX</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MAX</span><span class="p">,</span> <span class="n">MIN</span><span class="p">,</span> <span class="n">MAX</span><span class="p">]</span>
+<span class="n">listDetails</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Population density'</span><span class="p">,</span> <span class="s">'Monthly public transport ticket'</span><span class="p">,</span>
+               <span class="s">'Unemployment rate'</span><span class="p">,</span> <span class="s">'Cost of one-bedroom ap. in the center'</span><span class="p">,</span>
+               <span class="s">'Younger population'</span><span class="p">,</span> <span class="s">'Income inequalities'</span><span class="p">,</span> 
+               <span class="s">'Landmarks from UNESCO World Heritage list'</span><span class="p">,</span> 
+               <span class="s">'Average minimum temperature'</span><span class="p">,</span> 
+               <span class="s">'Higher average maximum temperature'</span><span class="p">,</span> 
+               <span class="s">'Higher average temperature'</span><span class="p">,</span> <span class="s">'Million inhabitants'</span><span class="p">,</span> 
+               <span class="s">'Billion higher gross domestic product (GDP)'</span><span class="p">,</span> 
+               <span class="s">'Higher average salary'</span><span class="p">,</span> <span class="s">'2 more big sport facilities'</span><span class="p">,</span> 
+               <span class="s">'Cost of one single transportation ticket'</span><span class="p">,</span>
+               <span class="s">'Billionaires from annual Forbes'</span><span class="p">]</span>
+<span class="n">tam</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">listCriteria</span><span class="p">)</span>
+<span class="n">contOttawa</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">contToronto</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'COMPARISON DETAILS [Ottawa x Toronto]'</span><span class="p">)</span>
+<span class="n">listWin</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">OTT</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">TOR</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tam</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">listCriteria</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">MIN</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">contOttawa</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">' * Comparing('</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s">'):'</span><span class="p">,</span><span class="n">listDetails</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s">':'</span><span class="p">,</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s">'&lt;'</span><span class="p">,</span>
+                  <span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s">'= Ottawa wins!'</span><span class="p">)</span>
+            <span class="n">listWin</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">OTT</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">contToronto</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">' * Comparing('</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s">'):'</span><span class="p">,</span><span class="n">listDetails</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s">':'</span><span class="p">,</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s">'&lt;'</span><span class="p">,</span>
+                  <span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s">'= Toronto wins!'</span><span class="p">)</span>
+            <span class="n">listWin</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TOR</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">contOttawa</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">' * Comparing('</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s">'):'</span><span class="p">,</span><span class="n">listDetails</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s">':'</span><span class="p">,</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s">'&gt;'</span><span class="p">,</span>
+                  <span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s">'= Ottawa wins!'</span><span class="p">)</span>
+            <span class="n">listWin</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">OTT</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">contToronto</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">' * Comparing('</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s">'):'</span><span class="p">,</span><span class="n">listDetails</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s">':'</span><span class="p">,</span><span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s">'&gt;'</span><span class="p">,</span>
+                  <span class="n">listNum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s">'= Toronto wins!'</span><span class="p">)</span>
+            <span class="n">listWin</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TOR</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p>COMPARISON DETAILS [Ottawa x Toronto]</p>
+<ul>
+  <li>Comparing( 0 ): Population density : 1680.0 &lt; 4150.0 = Ottawa wins!</li>
+  <li>Comparing( 1 ): Monthly public transport ticket : 81.26 &lt; 105.01 = Ottawa wins!</li>
+  <li>Comparing( 2 ): Unemployment rate : 6.3 &lt; 9.9 = Ottawa wins!</li>
+  <li>Comparing( 3 ): Cost of one-bedroom ap. in the center : 902.6 &lt; 1199.1 = Ottawa wins!</li>
+  <li>Comparing( 4 ): Younger population : 36.7 &lt; 36.9 = Ottawa wins!</li>
+  <li>Comparing( 5 ): Income inequalities : 0.44 &lt; 0.441 = Ottawa wins!</li>
+  <li>Comparing( 6 ): Landmarks from UNESCO World Heritage list : 1.0 &gt; 0.0 = Ottawa wins!</li>
+  <li>Comparing( 7 ): Average minimum temperature : 1.5 &lt; 6.2 = Ottawa wins!</li>
+  <li>Comparing( 8 ): Higher average maximum temperature : 10.9 &gt; 11.9 = Toronto wins!</li>
+  <li>Comparing( 9 ): Higher average temperature : 6.2 &gt; 9.1 = Toronto wins!</li>
+  <li>Comparing( 10 ): Million inhabitants : 0.88 &gt; 2.62 = Toronto wins!</li>
+  <li>Comparing( 11 ): Billion higher gross domestic product (GDP) : 40.0 &gt; 270.0 = Toronto wins!</li>
+  <li>Comparing( 12 ): Higher average salary : 2441.68 &gt; 2574.92 = Toronto wins!</li>
+  <li>Comparing( 13 ): 2 more big sport facilities : 1.0 &gt; 3.0 = Toronto wins!</li>
+  <li>Comparing( 14 ): Cost of one single transportation ticket : 2.62 &lt; 2.41 = Toronto wins!</li>
+  <li>Comparing( 15 ): Billionaires from annual Forbes : 0.0 &gt; 5.0 = Toronto wins!</li>
+</ul>
+
+<h5 id="step_235-choosing-the-best-indicators-personal-view"><strong>Step_2.3.5: Choosing the best indicators (personal view)</strong></h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">pointOtt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">pointTor</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">personalCriteria</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">listWin</span><span class="p">[</span><span class="n">personalCriteria</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">==</span> <span class="n">OTT</span><span class="p">):</span>
+        <span class="n">pointOtt</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pointTor</span><span class="o">+=</span><span class="mi">1</span></code></pre></figure>
+
+<h3 id="step-3-comparison">Step 3: Comparison</h3>
+
+<h4 id="step_31-foursquare-venues">Step_3.1: Foursquare Venues</h4>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'* CRITERION 1 =================================================='</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Toronto Downtown ='</span><span class="p">,</span><span class="n">numVenuesToronto</span><span class="p">,</span><span class="s">', </span><span class="err">
+</span><span class="s">        Ottawa downtown='</span><span class="p">,</span><span class="n">numVenuesOttawa</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Best places to family: Toronto ='</span><span class="p">,</span><span class="n">bestPlacesToronto</span><span class="p">,</span>
+        <span class="s">'x Ottawa ='</span><span class="p">,</span><span class="n">bestPlacesOttawa</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'==============================================================='</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p>CRITERION 1 ====================================================</p>
+
+<p>Toronto Downtown = 100 , Ottawa downtown= 100</p>
+
+<p>Best places to family: Toronto = 10 x Ottawa = 11</p>
+
+<p>===========================================================</p>
+
+<h4 id="step_32-versus-comparison">Step_3.2: Versus comparison</h4>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'* CRITERION 1 =================================================='</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Ottawa advantages:'</span><span class="p">,</span><span class="n">contOttawa</span><span class="p">,</span>
+      <span class="s">'x Toronto advantages:'</span><span class="p">,</span><span class="n">contToronto</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Best indicator ponctuation: Toronto ='</span><span class="p">,</span>
+      <span class="n">pointTor</span><span class="p">,</span><span class="s">'x Ottawa ='</span><span class="p">,</span><span class="n">pointOtt</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'==============================================================='</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p>CRITERION 2 ====================================================</p>
+
+<p>Ottawa advantages: 8 x Toronto advantages: 8</p>
+
+<p>Best indicator ponctuation: Toronto = 1 x Ottawa = 3</p>
+
+<p>===========================================================</p>
+
+<h4 id="step_33-final-comparison">Step_3.3: Final Comparison</h4>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">arrayCities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">bestPlacesToronto</span><span class="p">,</span> <span class="n">bestPlacesOttawa</span><span class="p">,</span> 
+              <span class="n">pointTor</span><span class="p">,</span> <span class="n">pointOtt</span><span class="p">]],</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+<span class="n">dfCities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">arrayCities</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'bestPlaceTor'</span><span class="p">,</span> 
+              <span class="s">'bestPlaceOtt'</span><span class="p">,</span> <span class="s">'pointTor'</span><span class="p">,</span> <span class="s">'pointOtt'</span><span class="p">])</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">dfCities</span><span class="p">[[</span><span class="s">'bestPlaceTor'</span><span class="p">,</span> <span class="s">'bestPlaceOtt'</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+              <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">kind</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">'Best Places'</span><span class="p">)</span>
+<span class="n">dfCities</span><span class="p">[[</span><span class="s">'pointTor'</span><span class="p">,</span> <span class="s">'pointOtt'</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> 
+              <span class="n">kind</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">'Criteria Points'</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li><strong>Output:</strong></li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/finalcomp.png" alt="Final comparison" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Both cities (Ottawa and Toronto) have similar advantages / disadvantages.</p>
+
+<p>However, under a <em>specific point of view</em>, the factors (most related with family benefits) can help to diferentiate the two cities and we can get a different perspective of them.</p>
+
+<p>For this reason, according aspects that our family considers important, such as best places and best criteria ponctuation, <strong>Ottawa</strong> was considered better.</p>
+
+<p>These are some reasons why, considering personal preferences, our family decided to move to Ottawa, Capital City. And in fact, we are loving this city.</p>
+
+
+  </div>
+</article>
+
+<!-- -->
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://paulobmsousa.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- -->
+
+<a class="u-url" href="/techblog/datascience_capstone/" hidden></a>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/techblog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">PauloBMSousa Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">PauloBMSousa Blog</li><li><a class="u-email" href="mailto:paulo.beniciol@gmail.com">paulo.beniciol@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/paulobmsousa"><svg class="svg-icon"><use xlink:href="/techblog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">paulobmsousa</span></a></li><li><a href="https://www.twitter.com/paulobmsousa"><svg class="svg-icon"><use xlink:href="/techblog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulobmsousa</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Personal Blog (incluing Family and Professional facts).</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

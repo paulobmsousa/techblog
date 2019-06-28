@@ -15,7 +15,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-30T09:38:58-04:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/techblog/hello_jekyll/"},"url":"http://localhost:4000/techblog/hello_jekyll/","headline":"Hello, Jekyll","dateModified":"2019-04-30T09:38:58-04:00","datePublished":"2019-04-30T09:38:58-04:00","description":"Personal Blog (incluing Family and Professional facts).","@context":"https://schema.org"}</script>
+{"headline":"Hello, Jekyll","dateModified":"2019-04-30T09:38:58-04:00","datePublished":"2019-04-30T09:38:58-04:00","@type":"BlogPosting","url":"http://localhost:4000/techblog/hello_jekyll/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/techblog/hello_jekyll/"},"description":"Personal Blog (incluing Family and Professional facts).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/techblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/techblog/feed.xml" title="PauloBMSousa Blog" /></head>
 <body><header class="site-header" role="banner">
@@ -49,13 +49,13 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><img src="https://lh5.googleusercontent.com/aJY53XopBebmUuEV63oGi0PH0xyJDEuYleY7Oda4L4svsuhPUhzHxCFPu2QKiNmYFEghwsuyyxjU-cWJ_6EZFpnIxezH3HHbsSM7Oy6Oo7v7iQK3szld=w472" alt="DevCorner" /></p>
+    <p><img src="https://raw.githubusercontent.com/paulobmsousa/courseraibmdatascience/master/devcorner1.png" alt="DevCorner" /></p>
 
 <h1 id="preview">Preview</h1>
 
 <p><img src="https://jekyllrb.com/img/logo-2x.png" alt="Jekyll Logo" title="Jekyll Logo" /></p>
 
-<p>In this first post, I have noted that it could be a good idea to summarize how to create <strong>posts</strong>, using <a href="https://jekyllrb.com/">Jekyll</a>, that, in short, is one of the simplest and powerfull tool to create blogs.</p>
+<p>In this first post, I have noted that it could be a good idea to summarize how to create <strong>posts</strong>, using <a href="https://jekyllrb.com/">Jekyll</a>, that, in short, is one of the simplest and powerful tool to create blogs.</p>
 
 <p>Firstly, some reasons to chose Jekyll:</p>
 <ul>
@@ -104,7 +104,7 @@
     <p>Under Windows environment, the process for installing Ruby is better conducted by using <a href="https://rubyinstaller.org/">Ruby Installer</a>.</p>
   </li>
   <li>
-    <p>Aditionally, the Jekyll site has a step-by-step procedure to help Windows users: <a href="https://jekyllrb.com/docs/installation/windows/">Jekyll on Windows</a>.</p>
+    <p>Additionally, the Jekyll site has a step-by-step procedure to help Windows users: <a href="https://jekyllrb.com/docs/installation/windows/">Jekyll on Windows</a>.</p>
   </li>
   <li>
     <p>Note that, probably you are using the <em>minima</em> theme bundle, that can be replaced whenever you want. But it is ideal for most cases.</p>
@@ -143,10 +143,10 @@
     <p><strong>markdown</strong>: The default markdown style. The option <em>“kramdown”</em> is the default for Jekyll;</p>
   </li>
   <li>
-    <p><strong>theme</strong>: The style (CSS behaviour) of your blog. The default (and very common used) is <em>“minima”</em>.</p>
+    <p><strong>theme</strong>: The style (CSS behavior) of your blog. The default (and very commonly used) is <em>“minima”</em>.</p>
   </li>
   <li>
-    <p><strong>permalink</strong>: The configuration of the URL shown in the Address bar. By default, it comes from a well defined structure: <em>”/:categories/:year/:month/:day/:title”</em>. If you prefer a simpler structure, you can adjust this item.</p>
+    <p><strong>permalink</strong>: The configuration of the URL shown in the Address bar. By default, it comes from a well-defined structure: <em>”/:categories/:year/:month/:day/:title”</em>. If you prefer a simpler structure, you can adjust this item.</p>
   </li>
 </ul>
 
@@ -168,7 +168,7 @@ comments: true</span></code></pre></figure>
 
 <h1 id="posts-general-structure">Posts: General Structure</h1>
 
-<p>It is time to take some notes aboute the most important structure: how posts are organized.</p>
+<p>It is time to take some notes about the most important structure: how posts are organized.</p>
 
 <h2 id="file-structure">File structure</h2>
 
@@ -230,7 +230,7 @@ comments: true</span></code></pre></figure>
 30/04/2019  14:52             1.652 _config.yml
 30/04/2019  14:52    &lt;DIR&gt;          _posts</code></pre></figure>
 
-<p>As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use aditional configuration folders in the default theme (for instance, <em>minima</em>). They are located in a proper folder, set during the bundle installation.</p>
+<p>As you can see the structure is very basic and not complete. In fact, in this case, Jekyll will use additional configuration folders in the default theme (for instance, <em>minima</em>). They are in a proper folder, set during the bundle installation.</p>
 
 <p>You can use commands in order to identify <em>where</em> a specific bundle is installed in your computer: <code class="highlighter-rouge">bundle show minima</code>.  For instance, in my version, (2.5.0) the minima bundle contains:</p>
 
@@ -265,7 +265,7 @@ comments: true</span></code></pre></figure>
 
 <h2 id="home-configuration">Home configuration</h2>
 
-<p>Posts are shown according the descendent time order (most recent first). This pattern is conventional and you should respect this organization.</p>
+<p>Posts are shown according the descendent time order (most recent first). This pattern is conventional, and you should respect this organization.</p>
 
 <p>In order to get it, my <strong>home.html</strong> is set as shown below:</p>
 
@@ -303,7 +303,7 @@ comments: true</span></code></pre></figure>
 
 <h2 id="posts-configuration">Posts configuration</h2>
 
-<p>Each posts usually follow the <strong>post.html</strong> template. In my case, the text is organized as follows:</p>
+<p>Each post usually follows the <strong>post.html</strong> template. In my case, the text is organized as follows:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
 <span class="ss">layout: </span><span class="n">default</span>
@@ -335,7 +335,7 @@ comments: true</span></code></pre></figure>
   &lt;/div&gt;
 &lt;/article&gt;</span></code></pre></figure>
 
-<h3 id="aditional-configuration">Aditional configuration</h3>
+<h3 id="additional-configuration">Additional configuration</h3>
 
 <p>Note that we are dealing with two configurations in this page that can be used in order to improve the quality of the posts and the feedback mechanism to the readers.</p>
 
@@ -448,14 +448,14 @@ git push -u origin master
     <p>Publish your posts: <code class="highlighter-rouge">git push -u origin master</code>.</p>
   </li>
   <li>
-    <p>Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: <code class="highlighter-rouge">git checkout -b [branchname]</code>. In this case, <em>branchname</em> can be, for instance, <strong>gh-pages</strong> (alusion to github pages);</p>
+    <p>Note that we are still using the master trunck. In a future, it is recommended to use a specific branch. In this step, you can create a branch: <code class="highlighter-rouge">git checkout -b [branchname]</code>. In this case, <em>branchname</em> can be, for instance, <strong>gh-pages</strong> (allusion to github pages);</p>
   </li>
   <li>
     <p>Copy the entire content of the master to the new branch: <code class="highlighter-rouge">git push origin [branchname]</code>.</p>
   </li>
 </ol>
 
-<p>Remember, whenever it is necessary, you must update your repository, by using <code class="highlighter-rouge">git commit -m [comment]</code>. And aditional files must be added before the commit, by using: <code class="highlighter-rouge">git add [filename]</code>.</p>
+<p>Remember, whenever it is necessary, you must update your repository, by using <code class="highlighter-rouge">git commit -m [comment]</code>. And additional files must be added before the commit, by using: <code class="highlighter-rouge">git add [filename]</code>.</p>
 
 <h2 id="github-pages-configuration">GitHub Pages Configuration</h2>
 
@@ -475,7 +475,7 @@ git push -u origin master
 
 <p><img src="https://static.tvtropes.org/pmwiki/pub/images/drjekyllmrhyde_01.jpg" alt="Hyde" title="Dr Jekyll Hyde" /></p>
 
-<p>Of course, a complete course of Jekyll and its advanteges is the better way to learn and practice the use of this very powerfull (and simple) tool.</p>
+<p>Of course, a complete course of Jekyll and its advantages is the better way to learn and practice the use of this very powerful (and simple) tool.</p>
 
 
   </div>
